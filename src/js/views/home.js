@@ -89,19 +89,19 @@ export async function renderHome(container) {
           <p class="about-intro">${profile.about.intro}</p>
           <div class="about-paragraphs">
             <div class="about-section-block">
-              <h3>Trajetória</h3>
+              <h3>Atuação & Clientes</h3>
               <p>${profile.about.who_am_i}</p>
             </div>
             <div class="about-section-block">
-              <h3>Filosofia</h3>
+              <h3>Planejamento & Campanhas</h3>
               <p>${profile.about.how_i_think}</p>
             </div>
             <div class="about-section-block">
-              <h3>Método</h3>
+              <h3>Inovação & Startups</h3>
               <p>${profile.about.how_i_work}</p>
             </div>
             <div class="about-section-block">
-              <h3>Valor Entrega</h3>
+              <h3>Foco & Resultados</h3>
               <p>${profile.about.why_hire_me}</p>
             </div>
           </div>

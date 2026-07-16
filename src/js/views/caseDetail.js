@@ -1,0 +1,130 @@
+import cases from '../../data/cases.json';
+
+export async function renderCaseDetail(container, params) {
+  const item = cases.find(c => c.slug === params.slug);
+  
+  if (!item) {
+    container.innerHTML = `<div class="container"><p>Caso não encontrado.</p><a href="#/">Voltar para a Home</a></div>`;
+    return;
+  }
+
+  // Generate gallery items
+  const galleryHtml = item.gallery.map(media => {
+    if (media.type === 'youtube') {
+      return `
+        <div class="gallery-item">
+          <div class="gallery-video-wrapper">
+            <iframe src="https://www.youtube.com/embed/${media.youtubeId}" 
+                    title="${media.caption}" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen 
+                    style="width: 100%; height: 100%; border: none;"></iframe>
+          </div>
+          <span class="gallery-caption">${media.caption}</span>
+        </div>
+      `;
+    } else if (media.type === 'video') {
+      // Map file path. If the video is in public folder or root, link it.
+      return `
+        <div class="gallery-item">
+          <div class="gallery-video-wrapper">
+            <video controls preload="metadata" playsinline>
+              <source src="${media.src}" type="video/mp4">
+              <source src="${media.src}" type="video/quicktime">
+              Seu navegador não suporta a reprodução de vídeo.
+            </video>
+          </div>
+          <span class="gallery-caption">${media.caption}</span>
+        </div>
+      `;
+    } else {
+      return `
+        <div class="gallery-item">
+          <div style="background-color: var(--color-bg-secondary); aspect-ratio: 16/10; width: 100%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border);">
+            <div style="padding: 2rem; text-align: center; color: var(--color-text-muted);">
+              [Visualização Editorial de Portfólio: ${media.caption}]
+            </div>
+          </div>
+          <span class="gallery-caption">${media.caption}</span>
+        </div>
+      `;
+    }
+  }).join('');
+
+  container.innerHTML = `
+    <div class="container" style="padding-top: var(--space-md);">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#/">Início</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#/cases">Cases</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color: var(--color-text-primary); font-weight: 500;">${item.client}</span>
+      </nav>
+
+      <!-- Header -->
+      <div class="case-detail-header">
+        <h1 class="case-detail-title">${item.title}</h1>
+      </div>
+
+      <!-- Grid layout: Meta Sidebar + Main body -->
+      <div class="editorial-grid">
+        <div class="case-meta-sidebar">
+          <div class="meta-item">
+            <span class="meta-label">Cliente</span>
+            <span class="meta-value">${item.client}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Categoria</span>
+            <span class="meta-value">${item.category}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Ano</span>
+            <span class="meta-value">${item.year}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Atuação</span>
+            <span class="meta-value" style="font-size: 0.95rem; font-weight: 300; line-height: 1.4;">${item.role}</span>
+          </div>
+        </div>
+
+        <div class="case-main-body">
+          <div class="case-section">
+            <h2 class="case-section-title">Contexto</h2>
+            <p class="case-section-content">${item.context}</p>
+          </div>
+          
+          <div class="case-section">
+            <h2 class="case-section-title">Desafio</h2>
+            <p class="case-section-content">${item.challenge}</p>
+          </div>
+
+          <div class="case-section">
+            <h2 class="case-section-title">Estratégia</h2>
+            <p class="case-section-content">${item.strategy}</p>
+          </div>
+
+          <div class="case-section">
+            <h2 class="case-section-title">Solução Desenvolvida</h2>
+            <p class="case-section-content">${item.solution}</p>
+          </div>
+
+          <div class="case-section">
+            <h2 class="case-section-title">Resultados e Impacto</h2>
+            <p class="case-section-content">${item.results}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      ${galleryHtml ? `
+        <div class="case-gallery">
+          <h2 class="case-section-title">Peças e Demonstrações</h2>
+          ${galleryHtml}
+        </div>
+      ` : ''}
+    </div>
+  `;
+}

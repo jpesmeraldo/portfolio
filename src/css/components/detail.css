@@ -1,0 +1,217 @@
+/* Styles for case study details and writing detail views */
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumb-separator {
+  color: var(--color-border);
+}
+
+/* Detail Case Header */
+.case-detail-header {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.case-detail-title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .case-detail-title {
+    font-size: 4rem;
+  }
+}
+
+/* Metadata panel (Sidebar-style on desktop) */
+.case-meta-sidebar {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .case-meta-sidebar {
+    grid-column: span 4;
+    flex-direction: column;
+    border-bottom: none;
+    border-right: 1px solid var(--color-border);
+    padding-bottom: 0;
+    padding-right: var(--space-md);
+    margin-bottom: 0;
+  }
+}
+
+.meta-item {
+  flex: 1 1 150px;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.meta-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* Main case content body */
+.case-main-body {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .case-main-body {
+    grid-column: span 8;
+  }
+}
+
+.case-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.case-section-title {
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.case-section-content {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+}
+
+/* Gallery & Video presentation */
+.case-gallery {
+  grid-column: span 12;
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.gallery-item {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.gallery-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery-caption {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* Text Detail layout (Reading format) */
+.text-detail-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.text-detail-header {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.text-category-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.text-detail-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .text-detail-title {
+    font-size: 3rem;
+  }
+}
+
+.text-detail-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+
+.text-detail-intro {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.text-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.text-detail-body p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}

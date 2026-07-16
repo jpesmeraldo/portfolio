@@ -1,0 +1,122 @@
+/* Filter navigation and list archive styles */
+
+/* Filter Bar */
+.filter-bar-container {
+  grid-column: span 12;
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-sm);
+  display: flex;
+  overflow-x: auto;
+  gap: var(--space-md);
+  scrollbar-width: none; /* Firefox */
+}
+
+.filter-bar-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+  position: relative;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  color: var(--color-text-primary);
+}
+
+.filter-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px; /* Align with border-bottom of container */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+/* Archives layouts */
+.archive-title-section {
+  padding: var(--space-md) 0 var(--space-sm) 0;
+}
+
+.archive-title {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.archive-grid {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap);
+}
+
+@media (min-width: 768px) {
+  .archive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Writing library feed */
+.texts-feed {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.text-feed-item {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.text-feed-item:hover {
+  transform: translateX(10px);
+}
+
+.text-feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-feed-category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.text-feed-date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.text-feed-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.text-feed-excerpt {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+}

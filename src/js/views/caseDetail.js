@@ -10,7 +10,22 @@ export async function renderCaseDetail(container, params) {
 
   // Generate gallery items
   const galleryHtml = item.gallery.map(media => {
-    if (media.type === 'youtube') {
+    if (media.type === 'vimeo') {
+      return `
+        <div class="gallery-item">
+          <div class="gallery-video-wrapper">
+            <iframe src="https://player.vimeo.com/video/${media.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479" 
+                    title="${media.caption}" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen 
+                    style="width: 100%; height: 100%; border: none;"></iframe>
+          </div>
+          <span class="gallery-caption">${media.caption}</span>
+        </div>
+      `;
+    } else if (media.type === 'youtube') {
       return `
         <div class="gallery-item">
           <div class="gallery-video-wrapper">

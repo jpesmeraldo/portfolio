@@ -14,8 +14,8 @@
     "results": "O vídeo oficial da campanha alcançou ampla veiculação na TV aberta e mídias sociais, gerando engajamento recorde para a comunicação da Prefeitura. A cobertura orgânica de imprensa foi amplificada devido à clareza das mensagens institucionais distribuídas.",
     "gallery": [
       {
-        "type": "youtube",
-        "youtubeId": "INSIRA_O_ID_DO_VIDEO_DO_YOUTUBE",
+        "type": "vimeo",
+        "vimeoId": "1210623163",
         "caption": "Filme oficial da campanha de 60 segundos veiculado em TV aberta e meios digitais."
       }
     ]

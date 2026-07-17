@@ -72,9 +72,9 @@ export async function renderCaseDetail(container, params) {
     <div class="container" style="padding-top: var(--space-md);">
       <!-- Breadcrumb -->
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="#/">Início</a>
+        <a href="/">Início</a>
         <span class="breadcrumb-separator">/</span>
-        <a href="#/cases">Cases</a>
+        <a href="/cases">Cases</a>
         <span class="breadcrumb-separator">/</span>
         <span style="color: var(--color-text-primary); font-weight: 500;">${item.client}</span>
       </nav>

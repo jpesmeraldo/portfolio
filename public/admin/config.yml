@@ -1,0 +1,89 @@
+backend:
+  name: github
+  repo: jpesmeraldo/portfolio
+  branch: main
+
+media_folder: "public/assets/images"
+public_folder: "assets/images"
+
+collections:
+  - name: "configuracoes"
+    label: "Configurações Globais"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "perfil"
+        label: "Perfil Profissional"
+        file: "src/data/profile.json"
+        fields:
+          - { label: "Nome Completo", name: "name", widget: "string" }
+          - { label: "Título Profissional", name: "title", widget: "string" }
+          - { label: "Frase de Impacto (Tagline)", name: "tagline", widget: "string" }
+          - label: "Sobre Mim (Apresentação)", name: "about", widget: "object", fields: [
+              { label: "Introdução", name: "intro", widget: "text" },
+              { label: "Atuação & Clientes (Parágrafo 2)", name: "who_am_i", widget: "text" },
+              { label: "Planejamento & Campanhas (Parágrafo 3)", name: "how_i_think", widget: "text" },
+              { label: "Inovação & Startups (Parágrafo 4)", name: "how_i_work", widget: "text" },
+              { label: "Foco & Resultados (Parágrafo 5)", name: "why_hire_me", widget: "text" }
+            ]
+          - label: "Especialidades", name: "specialties", widget: "list", fields: [
+              { label: "Título da Especialidade", name: "title", widget: "string" },
+              { label: "Descrição", name: "description", widget: "text" }
+            ]
+          - label: "Metodologia (Etapas)", name: "methodology", widget: "list", fields: [
+              { label: "Número (Ex: 01)", name: "step", widget: "string" },
+              { label: "Nome da Etapa", name: "name", widget: "string" },
+              { label: "Descrição Curta", name: "description", widget: "text" }
+            ]
+          - label: "Clientes", name: "clients", widget: "list", fields: [
+              { label: "Nome do Cliente/Setor", name: "name", widget: "string" },
+              { label: "Descrição do Trabalho", name: "sector", widget: "string" }
+            ]
+          - label: "Contatos", name: "contact", widget: "object", fields: [
+              { label: "E-mail Oficial", name: "email", widget: "string" },
+              { label: "Link do WhatsApp", name: "whatsapp", widget: "string" },
+              { label: "Link do LinkedIn", name: "linkedin", widget: "string" },
+              { label: "Link do Instagram", name: "instagram", widget: "string" },
+              { label: "Link do Behance", name: "behance", widget: "string" }
+            ]
+
+      - name: "cases"
+        label: "Cases de Sucesso (Portfólio)"
+        file: "src/data/cases.json"
+        fields:
+          - label: "Estudos de Caso", name: "cases", widget: "list", fields: [
+              { label: "Identificador (Slug único - ex: sao-joao-fortaleza)", name: "slug", widget: "string" },
+              { label: "Título do Case", name: "title", widget: "string" },
+              { label: "Cliente", name: "client", widget: "string" },
+              { label: "Categoria", name: "category", widget: "select", options: ["Campanhas Públicas", "Branding / Posicionamento", "ESG / Relatórios Anuais", "Conteúdo", "Marketing", "Eventos"] },
+              { label: "Ano", name: "year", widget: "string" },
+              { label: "Capa do Case", name: "image", widget: "image", required: false },
+              { label: "Contexto (Qual era o problema?)", name: "context", widget: "text" },
+              { label: "Desafio (O que precisava resolver?)", name: "challenge", widget: "text" },
+              { label: "Estratégia (Lógica adotada)", name: "strategy", widget: "text" },
+              { label: "Sua Atuação (Onde você participou)", name: "role", widget: "text" },
+              { label: "Solução (Como foi feito)", name: "solution", widget: "text" },
+              { label: "Resultados (Impactos qualitativos ou quantitativos)", name: "results", widget: "text" },
+              { label: "Galeria de Peças (Vimeo / Imagens)", name: "gallery", widget: "list", fields: [
+                  { label: "Tipo", name: "type", widget: "select", options: ["vimeo", "youtube", "image"] },
+                  { label: "ID do Vimeo (se aplicável)", name: "vimeoId", widget: "string", required: false },
+                  { label: "ID do YouTube (se aplicável)", name: "youtubeId", widget: "string", required: false },
+                  { label: "Arquivo de Imagem (se aplicável)", name: "src", widget: "image", required: false },
+                  { label: "Legenda / Descrição da Peça", name: "caption", widget: "string" }
+                ]
+              }
+            ]
+
+      - name: "texts"
+        label: "Biblioteca de Textos (Redação)"
+        file: "src/data/texts.json"
+        fields:
+          - label: "Textos Publicados", name: "texts", widget: "list", fields: [
+              { label: "Identificador (Slug único - ex: valor-silencio)", name: "slug", widget: "string" },
+              { label: "Título do Artigo/Texto", name: "title", widget: "string" },
+              { label: "Categoria", name: "category", widget: "select", options: ["Artigos", "Releases", "Manifestos", "Discursos", "Campanhas", "Roteiros", "Conceitos", "Slogans", "Newsletters"] },
+              { label: "Data de Publicação (Ex: 2024-05)", name: "date", widget: "string" },
+              { label: "Introdução / Contexto", name: "intro", widget: "text" },
+              { label: "Texto Completo (HTML)", name: "content", widget: "code", default_language: "html" }
+            ]

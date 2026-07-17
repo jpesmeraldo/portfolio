@@ -4,7 +4,7 @@ export async function renderTextDetail(container, params) {
   const item = texts.find(t => t.slug === params.slug);
 
   if (!item) {
-    container.innerHTML = `<div class="container"><p>Texto não encontrado.</p><a href="#/">Voltar para a Home</a></div>`;
+    container.innerHTML = `<div class="container"><p>Texto não encontrado.</p><a href="/">Voltar para a Home</a></div>`;
     return;
   }
 
@@ -12,9 +12,9 @@ export async function renderTextDetail(container, params) {
     <div class="text-detail-container">
       <!-- Breadcrumb -->
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="#/">Início</a>
+        <a href="/">Início</a>
         <span class="breadcrumb-separator">/</span>
-        <a href="#/biblioteca">Biblioteca</a>
+        <a href="/biblioteca">Biblioteca</a>
         <span class="breadcrumb-separator">/</span>
         <span style="color: var(--color-text-primary);">${item.category}</span>
       </nav>

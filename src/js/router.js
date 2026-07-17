@@ -1,5 +1,5 @@
 /**
- * Simple client-side hash router for the SPA portfolio.
+ * Simple client-side History API router for the SPA portfolio.
  */
 export class Router {
   constructor(routes, containerId) {
@@ -7,24 +7,42 @@ export class Router {
     this.container = document.getElementById(containerId);
     this.currentPath = null;
 
-    window.addEventListener('hashchange', () => this.handleRouting());
+    // Listen to history popstate (e.g. back/forward buttons)
+    window.addEventListener('popstate', () => this.handleRouting());
     window.addEventListener('load', () => this.handleRouting());
+
+    // Intercept clicks on links globally
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.href && link.host === window.location.host) {
+        // Skip default navigation for standard SPA routes, but let admin bypass
+        if (!link.getAttribute('target') && !link.pathname.startsWith('/admin')) {
+          e.preventDefault();
+          const targetPath = link.pathname + link.search + link.hash;
+          this.navigate(targetPath);
+        }
+      }
+    });
+  }
+
+  navigate(path) {
+    window.history.pushState({}, '', path);
+    this.handleRouting();
   }
 
   handleRouting() {
-    let hash = window.location.hash || '#/';
+    let path = window.location.pathname || '/';
     
-    // Support routing to sections on the homepage (e.g. #/about, #/specialties)
+    // Support routing to sections on the homepage (e.g. /sobre, /especialidades)
     let sectionId = '';
-    if (hash.startsWith('#/') && hash.length > 2 && !hash.includes('/case/') && !hash.includes('/texto/')) {
-      const parts = hash.split('/');
-      if (parts.length === 2 && ['sobre', 'especialidades', 'metodologia', 'contato', 'cases', 'depoimentos'].includes(parts[1])) {
-        sectionId = parts[1];
-        hash = '#/';
-      }
+    const basePaths = ['sobre', 'especialidades', 'metodologia', 'contato', 'cases', 'depoimentos', 'clientes'];
+    const parts = path.split('/');
+    if (parts.length === 2 && basePaths.includes(parts[1])) {
+      sectionId = parts[1];
+      path = '/';
     }
 
-    this.currentPath = hash;
+    this.currentPath = path;
     this.updateActiveNavLinks();
 
     // Match route
@@ -33,7 +51,7 @@ export class Router {
 
     for (const route of this.routes) {
       const routeRegex = route.path.replace(/:\w+/g, '([^/]+)');
-      const match = hash.match(new RegExp(`^${routeRegex}$`));
+      const match = path.match(new RegExp(`^${routeRegex}$`));
       
       if (match) {
         matchedRoute = route;
@@ -48,12 +66,10 @@ export class Router {
     }
 
     if (matchedRoute) {
-      // Clear container and render
       this.container.innerHTML = `<div class="view-fade" id="current-view"></div>`;
       const viewContainer = document.getElementById('current-view');
       
       matchedRoute.render(viewContainer, params).then(() => {
-        // If we routed to a section on home
         if (sectionId) {
           const element = document.getElementById(sectionId);
           if (element) {
@@ -63,21 +79,19 @@ export class Router {
             return;
           }
         }
-        
-        // Scroll to top by default
         window.scrollTo(0, 0);
       });
     } else {
       // Fallback to home
-      window.location.hash = '#/';
+      this.navigate('/');
     }
   }
 
   updateActiveNavLinks() {
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === this.currentPath) {
+      const linkPath = link.pathname;
+      if (linkPath === this.currentPath) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');

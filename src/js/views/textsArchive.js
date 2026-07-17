@@ -10,14 +10,14 @@ export async function renderTextsArchive(container) {
       : texts.filter(t => t.category === filterCategory);
 
     return filteredTexts.map(t => `
-      <div class="text-feed-item" onclick="window.location.hash = '#/texto/${t.slug}'">
+      <a href="/texto/${t.slug}" class="text-feed-item">
         <div class="text-feed-header">
           <span class="text-feed-category">${t.category}</span>
           <span class="text-feed-date">${t.date}</span>
         </div>
         <h3 class="text-feed-title">${t.title}</h3>
         <p class="text-feed-excerpt">${t.intro}</p>
-      </div>
+      </a>
     `).join('');
   }
 

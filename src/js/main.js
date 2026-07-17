@@ -12,11 +12,11 @@ import { renderTextsArchive } from './views/textsArchive.js';
 
 // Define routing map
 const routes = [
-  { path: '#/', render: renderHome },
-  { path: '#/cases', render: renderCasesArchive },
-  { path: '#/case/:slug', render: renderCaseDetail },
-  { path: '#/biblioteca', render: renderTextsArchive },
-  { path: '#/texto/:slug', render: renderTextDetail },
+  { path: '/', render: renderHome },
+  { path: '/cases', render: renderCasesArchive },
+  { path: '/case/:slug', render: renderCaseDetail },
+  { path: '/biblioteca', render: renderTextsArchive },
+  { path: '/texto/:slug', render: renderTextDetail },
 ];
 
 // Initialize Router

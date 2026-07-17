@@ -10,7 +10,7 @@ export async function renderCasesArchive(container) {
       : cases.filter(c => c.category === filterCategory);
 
     return filteredCases.map(c => `
-      <div class="case-card" onclick="window.location.hash = '#/case/${c.slug}'">
+      <a href="/case/${c.slug}" class="case-card">
         <div class="case-card-image">
           <div style="padding: 2rem; text-align: center;">
             <span style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--color-accent);">${c.client}</span>
@@ -21,7 +21,7 @@ export async function renderCasesArchive(container) {
           <span>${c.year}</span>
         </div>
         <h3 class="case-card-title">${c.title}</h3>
-      </div>
+      </a>
     `).join('');
   }
 

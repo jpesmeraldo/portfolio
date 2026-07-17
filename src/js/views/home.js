@@ -23,7 +23,7 @@ export async function renderHome(container) {
   `).join('');
 
   const casesHtml = recentCases.map(c => `
-    <div class="case-card" onclick="window.location.hash = '#/case/${c.slug}'">
+    <a href="/case/${c.slug}" class="case-card">
       <div class="case-card-image">
         <!-- Generates inline placeholder design or default editorial preview -->
         <div style="padding: 2rem; text-align: center;">
@@ -35,18 +35,18 @@ export async function renderHome(container) {
         <span>${c.year}</span>
       </div>
       <h3 class="case-card-title">${c.title}</h3>
-    </div>
+    </a>
   `).join('');
 
   const textsHtml = recentTexts.map(t => `
-    <div class="text-feed-item" onclick="window.location.hash = '#/texto/${t.slug}'">
+    <a href="/texto/${t.slug}" class="text-feed-item">
       <div class="text-feed-header">
         <span class="text-feed-category">${t.category}</span>
         <span class="text-feed-date">${t.date}</span>
       </div>
       <h3 class="text-feed-title">${t.title}</h3>
       <p class="text-feed-excerpt">${t.intro}</p>
-    </div>
+    </a>
   `).join('');
 
   const testimonialsHtml = profile.testimonials.map(test => `
@@ -73,7 +73,7 @@ export async function renderHome(container) {
         <div class="hero-title-container">
           <span class="hero-name">${profile.name}</span>
           <h1 class="hero-tagline">${profile.tagline}</h1>
-          <a href="#/cases" class="hero-cta">Conheça meu trabalho</a>
+          <a href="/cases" class="hero-cta">Conheça meu trabalho</a>
         </div>
       </div>
     </section>
@@ -132,7 +132,7 @@ export async function renderHome(container) {
             <span class="section-label">Cases de Sucesso</span>
             <h2 style="font-size: 2.5rem;">Trabalhos em Destaque</h2>
           </div>
-          <a href="#/cases" class="hero-cta" style="margin-top: 0;">Ver todos os cases</a>
+          <a href="/cases" class="hero-cta" style="margin-top: 0;">Ver todos os cases</a>
         </div>
         <div class="editorial-grid" style="margin-top: var(--space-md);">
           <div class="cases-teaser-grid">
@@ -163,7 +163,7 @@ export async function renderHome(container) {
             <span class="section-label">Biblioteca de Textos</span>
             <h2 style="font-size: 2.5rem;">Redação Estratégica e Peças Conceptuais</h2>
           </div>
-          <a href="#/biblioteca" class="hero-cta" style="margin-top: 0;">Explorar Biblioteca</a>
+          <a href="/biblioteca" class="hero-cta" style="margin-top: 0;">Explorar Biblioteca</a>
         </div>
         <div class="editorial-grid" style="margin-top: var(--space-md);">
           <div class="texts-feed">

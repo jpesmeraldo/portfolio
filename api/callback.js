@@ -31,6 +31,7 @@ export default async function handler(req, res) {
     const token = data.access_token;
     
     // Output HTML page with script to post the token back to Decap CMS and close the popup
+    const targetOrigin = `${protocol}://${host}`;
     res.setHeader('Content-Type', 'text/html');
     res.status(200).send(`
       <!DOCTYPE html>
@@ -45,7 +46,7 @@ export default async function handler(req, res) {
               token: "${token}",
               provider: "github"
             };
-            sender.postMessage('authorization:github:success:' + JSON.stringify(responseData), '*');
+            sender.postMessage('authorization:github:success:' + JSON.stringify(responseData), "${targetOrigin}");
             window.close();
           </script>
         </body>

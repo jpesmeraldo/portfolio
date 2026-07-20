@@ -11,6 +11,9 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!admin|assets|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/admin", "destination": "/admin/index.html" },
+    { "source": "/admin/:path*", "destination": "/admin/:path*" },
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ]
 }

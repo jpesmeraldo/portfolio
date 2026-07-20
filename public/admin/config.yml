@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jpesmeraldo/portfolio
   branch: main
-  base_url: https://jpesmeraldo.com.br
+  base_url: https://www.jpesmeraldo.com.br
   auth_endpoint: api/auth
 
 media_folder: "public/assets/images"

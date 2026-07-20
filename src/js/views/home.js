@@ -71,7 +71,6 @@ export async function renderHome(container) {
     <section class="hero-section">
       <div class="container editorial-grid">
         <div class="hero-title-container">
-          <span class="hero-name">${profile.name}</span>
           <h1 class="hero-tagline">${profile.tagline}</h1>
           <a href="/cases" class="hero-cta">Conheça meu trabalho</a>
         </div>
@@ -221,12 +220,6 @@ export async function renderHome(container) {
             </a>
             <a href="${profile.contact.linkedin}" target="_blank" class="contact-link">
               <span>LinkedIn Professional Profile</span>
-            </a>
-            <a href="${profile.contact.instagram}" target="_blank" class="contact-link">
-              <span>Instagram</span>
-            </a>
-            <a href="${profile.contact.behance}" target="_blank" class="contact-link">
-              <span>Behance Portfolio</span>
             </a>
           </div>
         </div>

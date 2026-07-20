@@ -46,7 +46,7 @@ export default async function handler(req, res) {
               token: "${token}",
               provider: "github"
             };
-            sender.postMessage('authorization:github:success:' + JSON.stringify(responseData), "${targetOrigin}");
+            sender.postMessage('authorization:github:success:' + JSON.stringify(responseData), "*");
             window.close();
           </script>
         </body>

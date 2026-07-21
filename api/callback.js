@@ -43,7 +43,7 @@ export default async function handler(req, res) {
 
     const token = data.access_token;
     
-    // Output HTML page with script to post the token back to Decap CMS and close the popup
+    // Output HTML page implementing the complete two-stage Decap CMS handshake protocol
     res.setHeader('Content-Type', 'text/html');
     res.status(200).send(`
       <!DOCTYPE html>
@@ -61,19 +61,36 @@ export default async function handler(req, res) {
           <p>Conectando ao painel do portfólio...</p>
           <div class="spinner"></div>
           <script>
-            const sender = window.opener || window.parent;
-            if (sender) {
-              const responseData = {
-                token: "${token}",
-                provider: "github"
-              };
-              sender.postMessage('authorization:github:success:' + JSON.stringify(responseData), '*');
-              setTimeout(() => {
+            (function() {
+              function sendHandshake() {
+                const sender = window.opener || window.parent;
+                if (!sender) return;
+
+                const responseData = JSON.stringify({
+                  token: "${token}",
+                  provider: "github"
+                });
+
+                // Stage 1: Send initial authorizing signal to prime Decap CMS listener
+                sender.postMessage("authorizing:github", "*");
+                
+                // Stage 2: Send final token payload
+                sender.postMessage("authorization:github:success:" + responseData, "*");
+              }
+
+              // Execute immediately
+              sendHandshake();
+
+              // Also respond if the parent window sends a verification handshake ping
+              window.addEventListener("message", function(e) {
+                sendHandshake();
+              }, false);
+
+              // Close popup after handshake completes
+              setTimeout(function() {
                 window.close();
-              }, 1000);
-            } else {
-              document.body.innerHTML = '<h3>Erro</h3><p>Não foi possível encontrar a janela principal do painel.</p>';
-            }
+              }, 1200);
+            })();
           </script>
         </body>
       </html>

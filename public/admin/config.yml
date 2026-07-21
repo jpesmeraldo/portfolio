@@ -1,3 +1,5 @@
+locale: "pt"
+
 backend:
   name: github
   repo: jpesmeraldo/portfolio
@@ -50,6 +52,8 @@ collections:
           - label: "Especialidades"
             name: "specialties"
             widget: "list"
+            label_singular: "Especialidade"
+            summary: "{{fields.title}}"
             fields:
               - label: "Título da Especialidade"
                 name: "title"
@@ -60,6 +64,8 @@ collections:
           - label: "Metodologia (Etapas)"
             name: "methodology"
             widget: "list"
+            label_singular: "Etapa"
+            summary: "{{fields.step}} - {{fields.name}}"
             fields:
               - label: "Número (Ex: 01)"
                 name: "step"
@@ -73,6 +79,8 @@ collections:
           - label: "Clientes"
             name: "clients"
             widget: "list"
+            label_singular: "Cliente"
+            summary: "{{fields.name}}"
             fields:
               - label: "Nome do Cliente/Setor"
                 name: "name"
@@ -107,6 +115,8 @@ collections:
           - label: "Estudos de Caso"
             name: "cases"
             widget: "list"
+            label_singular: "Estudo de Caso"
+            summary: "{{fields.title}} ({{fields.client}})"
             fields:
               - label: "Identificador (Slug único - ex: sao-joao-fortaleza)"
                 name: "slug"
@@ -155,6 +165,8 @@ collections:
               - label: "Galeria de Peças (Vimeo / Imagens)"
                 name: "gallery"
                 widget: "list"
+                label_singular: "Peça"
+                summary: "{{fields.type}} - {{fields.caption}}"
                 fields:
                   - label: "Tipo"
                     name: "type"
@@ -186,6 +198,8 @@ collections:
           - label: "Textos Publicados"
             name: "texts"
             widget: "list"
+            label_singular: "Texto"
+            summary: "{{fields.title}} [{{fields.category}}]"
             fields:
               - label: "Identificador (Slug único - ex: valor-silencio)"
                 name: "slug"

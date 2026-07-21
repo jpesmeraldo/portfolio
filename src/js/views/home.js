@@ -3,9 +3,12 @@ import cases from '../../data/cases.json';
 import texts from '../../data/texts.json';
 
 export async function renderHome(container) {
+  const allCases = Array.isArray(cases) ? cases : (cases.cases || []);
+  const allTexts = Array.isArray(texts) ? texts : (texts.texts || []);
+
   // Take last 3 cases and last 3 texts for highlights
-  const recentCases = cases.slice(0, 3);
-  const recentTexts = texts.slice(0, 3);
+  const recentCases = allCases.slice(0, 3);
+  const recentTexts = allTexts.slice(0, 3);
 
   const specialtiesHtml = profile.specialties.map(spec => `
     <div class="specialty-card">

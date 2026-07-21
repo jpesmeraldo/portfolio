@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="/admin/cms.css" />
   </head>
   <body>
-    <!-- Include the Decap CMS JavaScript package -->
+    <!-- Include the Decap CMS JavaScript package & PT-BR Locale -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms-locales@^1.0.0/dist/pt.js"></script>
+    <script>
+      if (window.CMS && window.decapCmsLocales && window.decapCmsLocales.pt) {
+        window.CMS.registerLocale('pt', window.decapCmsLocales.pt);
+      }
+    </script>
   </body>
 </html>

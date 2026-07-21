@@ -1,7 +1,8 @@
 import cases from '../../data/cases.json';
 
 export async function renderCaseDetail(container, params) {
-  const item = cases.find(c => c.slug === params.slug);
+  const allCases = Array.isArray(cases) ? cases : (cases.cases || []);
+  const item = allCases.find(c => c.slug === params.slug);
   
   if (!item) {
     container.innerHTML = `<div class="container"><p>Caso não encontrado.</p><a href="#/">Voltar para a Home</a></div>`;

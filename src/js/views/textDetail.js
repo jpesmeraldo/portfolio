@@ -1,7 +1,8 @@
 import texts from '../../data/texts.json';
 
 export async function renderTextDetail(container, params) {
-  const item = texts.find(t => t.slug === params.slug);
+  const allTexts = Array.isArray(texts) ? texts : (texts.texts || []);
+  const item = allTexts.find(t => t.slug === params.slug);
 
   if (!item) {
     container.innerHTML = `<div class="container"><p>Texto não encontrado.</p><a href="/">Voltar para a Home</a></div>`;

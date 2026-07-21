@@ -1,13 +1,15 @@
 import cases from '../../data/cases.json';
 
 export async function renderCasesArchive(container) {
+  const allCases = Array.isArray(cases) ? cases : (cases.cases || []);
+
   // Get all unique categories for filters
-  const categories = ['Todos', ...new Set(cases.map(c => c.category))];
+  const categories = ['Todos', ...new Set(allCases.map(c => c.category))];
 
   function renderGrid(filterCategory = 'Todos') {
     const filteredCases = filterCategory === 'Todos' 
-      ? cases 
-      : cases.filter(c => c.category === filterCategory);
+      ? allCases 
+      : allCases.filter(c => c.category === filterCategory);
 
     return filteredCases.map(c => `
       <a href="/case/${c.slug}" class="case-card">

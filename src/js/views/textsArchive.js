@@ -1,13 +1,15 @@
 import texts from '../../data/texts.json';
 
 export async function renderTextsArchive(container) {
+  const allTexts = Array.isArray(texts) ? texts : (texts.texts || []);
+
   // Get all unique categories for filters
-  const categories = ['Todos', ...new Set(texts.map(t => t.category))];
+  const categories = ['Todos', ...new Set(allTexts.map(t => t.category))];
 
   function renderFeed(filterCategory = 'Todos') {
     const filteredTexts = filterCategory === 'Todos' 
-      ? texts 
-      : texts.filter(t => t.category === filterCategory);
+      ? allTexts 
+      : allTexts.filter(t => t.category === filterCategory);
 
     return filteredTexts.map(t => `
       <a href="/texto/${t.slug}" class="text-feed-item">

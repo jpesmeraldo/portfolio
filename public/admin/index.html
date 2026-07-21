@@ -8,12 +8,90 @@
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <!-- Custom editorial branding styles for Decap CMS -->
     <link rel="stylesheet" href="/admin/cms.css" />
+    <!-- Load Quill WYSIWYG stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Include the Decap CMS JavaScript package -->
+    <!-- Include the Decap CMS JavaScript package & PT-BR Locale -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms-locales@^1.0.0/dist/pt.js"></script>
+    <!-- Load Quill WYSIWYG Script library -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    
     <script>
+      // Register custom Quill rich text editor widget
+      const QuillControl = createClass({
+        handleChange: function(value) {
+          this.props.onChange(value);
+        },
+        componentDidMount: function() {
+          const container = this.quillContainer;
+          
+          // Configure toolbar options including fonts, alignment, sizes, formatting
+          const quill = new Quill(container, {
+            theme: 'snow',
+            modules: {
+              toolbar: [
+                [{ 'font': [] }, { 'size': ['small', false, 'large', 'huge'] }],
+                ['bold', 'italic', 'underline', 'strike'],
+                [{ 'color': [] }, { 'background': [] }],
+                [{ 'align': [] }],
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                ['link', 'blockquote', 'code-block'],
+                ['clean']
+              ]
+            }
+          });
+          
+          this.quill = quill;
+          
+          // Inject initial content
+          if (this.props.value) {
+            quill.clipboard.dangerouslyPasteHTML(this.props.value);
+          }
+          
+          // Send updates back to Decap CMS state
+          quill.on('text-change', () => {
+            const html = container.querySelector('.ql-editor').innerHTML;
+            if (html !== this.props.value) {
+              this.handleChange(html);
+            }
+          });
+        },
+        componentDidUpdate: function(prevProps) {
+          if (this.quill && this.props.value !== prevProps.value) {
+            const currentHtml = this.quillContainer.querySelector('.ql-editor').innerHTML;
+            if (this.props.value !== currentHtml) {
+              this.quill.clipboard.dangerouslyPasteHTML(this.props.value || '');
+            }
+          }
+        },
+        render: function() {
+          return h('div', {
+            style: { border: '1px solid #e2e2e7', borderRadius: '4px', background: '#ffffff' }
+          }, 
+            h('div', {
+              ref: (node) => { this.quillContainer = node; },
+              style: { minHeight: '220px' }
+            })
+          );
+        }
+      });
+
+      const QuillPreview = createClass({
+        render: function() {
+          return h('div', {
+            style: { padding: '10px' },
+            dangerouslySetInnerHTML: { __html: this.props.value }
+          });
+        }
+      });
+
+      // Register the widget in Decap CMS
       if (window.CMS) {
+        window.CMS.registerWidget('quill', QuillControl, QuillPreview);
+        
+        // Register Portuguese Locale dictionary
         window.CMS.registerLocale('pt', {
           auth: {
             login: 'Entrar',

@@ -109,27 +109,27 @@ export async function renderCaseDetail(container, params) {
         <div class="case-main-body">
           <div class="case-section">
             <h2 class="case-section-title">Contexto</h2>
-            <p class="case-section-content">${item.context}</p>
+            <div class="case-section-content">${item.context}</div>
           </div>
           
           <div class="case-section">
             <h2 class="case-section-title">Desafio</h2>
-            <p class="case-section-content">${item.challenge}</p>
+            <div class="case-section-content">${item.challenge}</div>
           </div>
 
           <div class="case-section">
             <h2 class="case-section-title">Estratégia</h2>
-            <p class="case-section-content">${item.strategy}</p>
+            <div class="case-section-content">${item.strategy}</div>
           </div>
 
           <div class="case-section">
             <h2 class="case-section-title">Solução Desenvolvida</h2>
-            <p class="case-section-content">${item.solution}</p>
+            <div class="case-section-content">${item.solution}</div>
           </div>
 
           <div class="case-section">
             <h2 class="case-section-title">Resultados e Impacto</h2>
-            <p class="case-section-content">${item.results}</p>
+            <div class="case-section-content">${item.results}</div>
           </div>
         </div>
       </div>

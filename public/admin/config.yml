@@ -183,27 +183,27 @@ collections:
                 required: false
               - label: "Contexto (Qual era o problema?)"
                 name: "context"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Desafio (O que precisava resolver?)"
                 name: "challenge"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Estratégia (Lógica adotada)"
                 name: "strategy"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Sua Atuação (Onde você participou)"
                 name: "role"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Solução (Como foi feito)"
                 name: "solution"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Resultados (Impactos qualitativos ou quantitativos)"
                 name: "results"
-                widget: "text"
+                widget: "quill"
                 required: false
               - label: "Galeria de Peças (Vimeo / Imagens)"
                 name: "gallery"
@@ -286,5 +286,5 @@ collections:
                 required: false
               - label: "Texto Completo (HTML ou Parágrafos)"
                 name: "content"
-                widget: "text"
+                widget: "quill"
                 required: false

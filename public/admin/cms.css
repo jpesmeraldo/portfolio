@@ -61,3 +61,24 @@ h1, h2, h3, [class*="CollectionHeaderTitle"] {
   border-color: #a05a32 !important;
   box-shadow: 0 0 0 2px rgba(160, 90, 50, 0.15) !important;
 }
+
+/* Custom Secure Logout Button */
+.custom-logout-btn {
+  background-color: #d9534f !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 6px 14px !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  margin-right: 15px !important;
+  transition: all 0.2s ease !important;
+  align-self: center !important;
+}
+
+.custom-logout-btn:hover {
+  background-color: #c9302c !important;
+  transform: translateY(-1px) !important;
+}

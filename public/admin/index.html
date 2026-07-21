@@ -62,6 +62,29 @@
           },
         });
       }
+
+      // DOM Watcher to inject secure logout button next to the avatar
+      setInterval(() => {
+        const header = document.querySelector('[class*="AppHeaderContent"]');
+        if (header && !document.getElementById('custom-secure-logout')) {
+          const userMenu = header.querySelector('button[class*="AppHeaderUser"]');
+          if (userMenu) {
+            const logoutBtn = document.createElement('button');
+            logoutBtn.id = 'custom-secure-logout';
+            logoutBtn.className = 'custom-logout-btn';
+            logoutBtn.innerText = 'Sair em segurança';
+            logoutBtn.onclick = function() {
+              if (confirm('Tem certeza de que deseja encerrar sua sessão com segurança?')) {
+                localStorage.removeItem('decap-cms-user');
+                localStorage.removeItem('netlify-cms-user');
+                sessionStorage.clear();
+                window.location.reload();
+              }
+            };
+            userMenu.parentNode.insertBefore(logoutBtn, userMenu);
+          }
+        }
+      }, 1000);
     </script>
   </body>
 </html>

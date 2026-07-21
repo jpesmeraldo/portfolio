@@ -10,12 +10,57 @@
     <link rel="stylesheet" href="/admin/cms.css" />
   </head>
   <body>
-    <!-- Include the Decap CMS JavaScript package & PT-BR Locale -->
+    <!-- Include the Decap CMS JavaScript package -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script src="https://unpkg.com/decap-cms-locales@^1.0.0/dist/pt.js"></script>
     <script>
-      if (window.CMS && window.decapCmsLocales && window.decapCmsLocales.pt) {
-        window.CMS.registerLocale('pt', window.decapCmsLocales.pt);
+      if (window.CMS) {
+        window.CMS.registerLocale('pt', {
+          auth: {
+            login: 'Entrar',
+            loggingIn: 'Entrando...',
+            loginWithGitHub: 'Entrar com GitHub',
+            errors: {
+              auth: 'Ocorreu um erro ao tentar autenticar.',
+            },
+          },
+          app: {
+            header: {
+              content: 'Conteúdo',
+              workflow: 'Fluxo de Trabalho',
+              media: 'Mídia',
+              quickAdd: 'Adicionar rápido',
+            },
+            app: {
+              errorHeader: 'Erro ao carregar o painel',
+              configRequired: 'A configuração do CMS é obrigatória.',
+              loadingConfig: 'Carregando...',
+            },
+          },
+          collection: {
+            sidebar: {
+              collections: 'Coleções',
+              searchAll: 'Pesquisar',
+            },
+            collectionTop: {
+              sortBy: 'Ordenar por',
+              viewAs: 'Exibir como',
+              newButton: 'Novo %{collectionLabel}',
+            },
+            entries: {
+              emptyCollection: 'Nenhum item cadastrado',
+              loadingEntries: 'Carregando...',
+            },
+          },
+          editor: {
+            editorToolbar: {
+              publishing: 'Publicando...',
+              publish: 'Publicar',
+              published: 'Publicado',
+              changesSaved: 'Alterações salvas',
+              draft: 'Rascunho',
+            },
+          },
+        });
       }
     </script>
   </body>

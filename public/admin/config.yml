@@ -24,89 +24,114 @@ collections:
           - label: "Nome Completo"
             name: "name"
             widget: "string"
+            required: true
           - label: "Título Profissional"
             name: "title"
             widget: "string"
+            required: false
           - label: "Frase de Impacto (Tagline)"
             name: "tagline"
             widget: "string"
+            required: false
           - label: "Sobre Mim (Apresentação)"
             name: "about"
             widget: "object"
+            required: false
             fields:
               - label: "Introdução"
                 name: "intro"
                 widget: "text"
+                required: false
               - label: "Atuação & Clientes (Parágrafo 2)"
                 name: "who_am_i"
                 widget: "text"
+                required: false
               - label: "Planejamento & Campanhas (Parágrafo 3)"
                 name: "how_i_think"
                 widget: "text"
+                required: false
               - label: "Inovação & Startups (Parágrafo 4)"
                 name: "how_i_work"
                 widget: "text"
+                required: false
               - label: "Foco & Resultados (Parágrafo 5)"
                 name: "why_hire_me"
                 widget: "text"
+                required: false
           - label: "Especialidades"
             name: "specialties"
             widget: "list"
             label_singular: "Especialidade"
             summary: "{{fields.title}}"
+            required: false
             fields:
               - label: "Título da Especialidade"
                 name: "title"
                 widget: "string"
+                required: true
               - label: "Descrição"
                 name: "description"
                 widget: "text"
+                required: false
           - label: "Metodologia (Etapas)"
             name: "methodology"
             widget: "list"
             label_singular: "Etapa"
             summary: "{{fields.step}} - {{fields.name}}"
+            required: false
             fields:
               - label: "Número (Ex: 01)"
                 name: "step"
                 widget: "string"
+                required: true
               - label: "Nome da Etapa"
                 name: "name"
                 widget: "string"
+                required: true
               - label: "Descrição Curta"
                 name: "description"
                 widget: "text"
+                required: false
           - label: "Clientes"
             name: "clients"
             widget: "list"
             label_singular: "Cliente"
             summary: "{{fields.name}}"
+            required: false
             fields:
               - label: "Nome do Cliente/Setor"
                 name: "name"
                 widget: "string"
+                required: true
               - label: "Descrição do Trabalho"
                 name: "sector"
                 widget: "string"
+                required: false
           - label: "Contatos"
             name: "contact"
             widget: "object"
+            required: false
             fields:
               - label: "E-mail Oficial"
                 name: "email"
                 widget: "string"
+                required: false
               - label: "Link do WhatsApp"
                 name: "whatsapp"
                 widget: "string"
+                required: false
               - label: "Link do LinkedIn"
                 name: "linkedin"
                 widget: "string"
+                required: false
               - label: "Link do Instagram"
                 name: "instagram"
                 widget: "string"
+                required: false
               - label: "Link do Behance"
                 name: "behance"
                 widget: "string"
+                required: false
 
   - name: "cases_collection"
     label: "Cases de Sucesso (Portfólio)"
@@ -123,19 +148,24 @@ collections:
             widget: "list"
             label_singular: "Estudo de Caso"
             summary: "{{fields.title}} ({{fields.client}})"
+            required: false
             fields:
               - label: "Identificador (Slug único - ex: sao-joao-fortaleza)"
                 name: "slug"
                 widget: "string"
+                required: true
               - label: "Título do Case"
                 name: "title"
                 widget: "string"
+                required: true
               - label: "Cliente"
                 name: "client"
                 widget: "string"
+                required: false
               - label: "Categoria"
                 name: "category"
                 widget: "select"
+                required: false
                 options:
                   - "Campanhas Públicas"
                   - "Branding / Posicionamento"
@@ -146,6 +176,7 @@ collections:
               - label: "Ano"
                 name: "year"
                 widget: "string"
+                required: false
               - label: "Capa do Case"
                 name: "image"
                 widget: "image"
@@ -153,30 +184,38 @@ collections:
               - label: "Contexto (Qual era o problema?)"
                 name: "context"
                 widget: "text"
+                required: false
               - label: "Desafio (O que precisava resolver?)"
                 name: "challenge"
                 widget: "text"
+                required: false
               - label: "Estratégia (Lógica adotada)"
                 name: "strategy"
                 widget: "text"
+                required: false
               - label: "Sua Atuação (Onde você participou)"
                 name: "role"
                 widget: "text"
+                required: false
               - label: "Solução (Como foi feito)"
                 name: "solution"
                 widget: "text"
+                required: false
               - label: "Resultados (Impactos qualitativos ou quantitativos)"
                 name: "results"
                 widget: "text"
+                required: false
               - label: "Galeria de Peças (Vimeo / Imagens)"
                 name: "gallery"
                 widget: "list"
                 label_singular: "Peça"
                 summary: "{{fields.type}} - {{fields.caption}}"
+                required: false
                 fields:
                   - label: "Tipo"
                     name: "type"
                     widget: "select"
+                    required: true
                     options:
                       - "vimeo"
                       - "youtube"
@@ -196,6 +235,7 @@ collections:
                   - label: "Legenda / Descrição da Peça"
                     name: "caption"
                     widget: "string"
+                    required: false
 
   - name: "texts_collection"
     label: "Biblioteca de Textos (Redação)"
@@ -212,16 +252,20 @@ collections:
             widget: "list"
             label_singular: "Texto"
             summary: "{{fields.title}} [{{fields.category}}]"
+            required: false
             fields:
               - label: "Identificador (Slug único - ex: valor-silencio)"
                 name: "slug"
                 widget: "string"
+                required: true
               - label: "Título do Artigo/Texto"
                 name: "title"
                 widget: "string"
+                required: true
               - label: "Categoria"
                 name: "category"
                 widget: "select"
+                required: false
                 options:
                   - "Artigos"
                   - "Releases"
@@ -235,9 +279,12 @@ collections:
               - label: "Data de Publicação (Ex: 2024-05)"
                 name: "date"
                 widget: "string"
+                required: false
               - label: "Introdução / Contexto"
                 name: "intro"
                 widget: "text"
+                required: false
               - label: "Texto Completo (HTML ou Parágrafos)"
                 name: "content"
                 widget: "text"
+                required: false

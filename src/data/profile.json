@@ -1,32 +1,9 @@
 {
-  "name": "João Paulo Esmeraldo",
-  "title": "Redator Estratégico & Especialista em Comunicação Institucional",
-  "tagline": "Boas ideias merecem ser de propósito.",
-  "about": {
-    "intro": "Com 18 anos de experiência, sou um profissional comprometido, criativo e versátil, sempre orientado a resultados.",
-    "who_am_i": "Atualmente, trabalho como redator sênior na Agil Comunicação, onde, há mais de 11 anos, contribuo para o desenvolvimento de licitações, campanhas publicitárias e políticas de grande impacto. Nesse período, tive a oportunidade de colaborar com clientes dos setores público e privado, como o Governo do Estado do Ceará, Assembleia Legislativa do Estado do Ceará e Prefeitura de Fortaleza.",
-    "how_i_think": "Minha trajetória é marcada pelo envolvimento em todas as etapas do planejamento estratégico, criação e coordenação de campanhas integradas, além da elaboração de propostas para licitações e participação ativa em campanhas eleitorais municipais e estaduais.",
-    "how_i_work": "Expandindo minha atuação além da comunicação tradicional, mergulhei no universo das startups por meio da ShIFt, empresa independente dedicada à inovação estratégica. Nessa experiência, participei da concepção, desenvolvimento e implementação de projetos inovadores, unindo criatividade e tecnologia para entregar soluções relevantes ao mercado.",
-    "why_hire_me": "Sou movido pelo desafio de criar estratégias criativas e sustentáveis, sempre alinhadas aos objetivos dos clientes. Com olhar atento às tendências e demandas do setor, busco contribuir com minha experiência, visão estratégica e paixão por inovação para impulsionar projetos transformadores."
+  "contact": {
+    "email": "jpefgg@gmail.com",
+    "whatsapp": "https://wa.me/5585996715464",
+    "linkedin": "https://www.linkedin.com/in/jpesmeraldo/"
   },
-  "specialties": [
-    {
-      "title": "Comunicação Institucional & Branding",
-      "description": "Desenvolvimento de manifestos de marca, conceitos criativos de posicionamento, manuais de tom de voz e arquitetura de mensagens corporativas."
-    },
-    {
-      "title": "Redação Estratégica & Discursos",
-      "description": "Criação de pronunciamentos de porta-vozes, discursos executivos e posicionamentos institucionais sobre temas de alto impacto."
-    },
-    {
-      "title": "Campanhas Políticas & Governamentais",
-      "description": "Concepção de narrativas para campanhas políticas eleitorais, de conscientização social, prestação de contas, mobilização pública e de utilidade governamental."
-    },
-    {
-      "title": "Comunicação Corporativa & ESG",
-      "description": "Gestão de crise, reposicionamento e estratégias de relações públicas."
-    }
-  ],
   "methodology": [
     {
       "step": "01",
@@ -82,6 +59,15 @@
       "sector": "Gestão de crise e comunicados oficiais"
     }
   ],
+  "name": "João Paulo Esmeraldo",
+  "about": {
+    "intro": "Com 18 anos de experiência, sou um profissional comprometido, criativo e versátil, sempre orientado a resultados.",
+    "who_am_i": "Atualmente, trabalho como redator sênior na Agil Comunicação, onde, há mais de 11 anos, contribuo para o desenvolvimento de licitações, campanhas publicitárias e políticas de grande impacto. Nesse período, tive a oportunidade de colaborar com clientes dos setores público e privado, como o Governo do Estado do Ceará, Assembleia Legislativa do Estado do Ceará e Prefeitura de Fortaleza.",
+    "how_i_think": "Minha trajetória é marcada pelo envolvimento em todas as etapas do planejamento estratégico, criação e coordenação de campanhas integradas, além da elaboração de propostas para licitações e participação ativa em campanhas eleitorais municipais e estaduais.",
+    "how_i_work": "Expandindo minha atuação além da comunicação tradicional, mergulhei no universo das startups por meio da ShIFt, empresa independente dedicada à inovação estratégica. Nessa experiência, participei da concepção, desenvolvimento e implementação de projetos inovadores, unindo criatividade e tecnologia para entregar soluções relevantes ao mercado.",
+    "why_hire_me": "Sou movido pelo desafio de criar estratégias criativas e sustentáveis, sempre alinhadas aos objetivos dos clientes. Com olhar atento às tendências e demandas do setor, busco contribuir com minha experiência, visão estratégica e paixão por inovação para impulsionar projetos transformadores."
+  },
+  "tagline": "Boas ideias merecem um propósito.",
   "testimonials": [
     {
       "quote": "A capacidade do João em traduzir conceitos regulatórios e técnicos complexos em um manifesto inspirador foi fundamental para o reposicionamento global da nossa marca.",
@@ -94,9 +80,23 @@
       "company": "Órgão Público"
     }
   ],
-  "contact": {
-    "email": "jpefgg@gmail.com",
-    "whatsapp": "https://wa.me/5585996715464",
-    "linkedin": "https://www.linkedin.com/in/jpesmeraldo/"
-  }
+  "title": "Redator Estratégico & Especialista em Comunicação Institucional",
+  "specialties": [
+    {
+      "title": "Comunicação Institucional & Branding",
+      "description": "Desenvolvimento de manifestos de marca, conceitos criativos de posicionamento, manuais de tom de voz e arquitetura de mensagens corporativas."
+    },
+    {
+      "title": "Redação Estratégica & Discursos",
+      "description": "Criação de pronunciamentos de porta-vozes, discursos executivos e posicionamentos institucionais sobre temas de alto impacto."
+    },
+    {
+      "title": "Campanhas Políticas & Governamentais",
+      "description": "Concepção de narrativas para campanhas políticas eleitorais, de conscientização social, prestação de contas, mobilização pública e de utilidade governamental."
+    },
+    {
+      "title": "Comunicação Corporativa & ESG",
+      "description": "Gestão de crise, reposicionamento e estratégias de relações públicas."
+    }
+  ]
 }

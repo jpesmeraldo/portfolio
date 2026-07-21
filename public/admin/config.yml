@@ -11,14 +11,14 @@ media_folder: "public/assets/images"
 public_folder: "assets/images"
 
 collections:
-  - name: "configuracoes"
-    label: "Configurações Globais"
+  - name: "perfil"
+    label: "Perfil Profissional"
     delete: false
     editor:
       preview: false
     files:
-      - name: "perfil"
-        label: "Perfil Profissional"
+      - name: "profile_data"
+        label: "Informações Principais & Apresentação"
         file: "src/data/profile.json"
         fields:
           - label: "Nome Completo"
@@ -108,8 +108,14 @@ collections:
                 name: "behance"
                 widget: "string"
 
-      - name: "cases"
-        label: "Cases de Sucesso (Portfólio)"
+  - name: "cases_collection"
+    label: "Cases de Sucesso (Portfólio)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "cases_file"
+        label: "Gerenciar Estudos de Caso"
         file: "src/data/cases.json"
         fields:
           - label: "Estudos de Caso"
@@ -191,8 +197,14 @@ collections:
                     name: "caption"
                     widget: "string"
 
-      - name: "texts"
-        label: "Biblioteca de Textos (Redação)"
+  - name: "texts_collection"
+    label: "Biblioteca de Textos (Redação)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "texts_file"
+        label: "Gerenciar Textos Publicados"
         file: "src/data/texts.json"
         fields:
           - label: "Textos Publicados"
@@ -226,7 +238,6 @@ collections:
               - label: "Introdução / Contexto"
                 name: "intro"
                 widget: "text"
-              - label: "Texto Completo (HTML)"
+              - label: "Texto Completo (HTML ou Parágrafos)"
                 name: "content"
-                widget: "code"
-                default_language: "html"
+                widget: "text"

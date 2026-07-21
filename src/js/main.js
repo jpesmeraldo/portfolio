@@ -54,16 +54,43 @@ if (!CSS.supports('animation-timeline', 'scroll()')) {
   }
 }
 
+// --- Dark / Light Theme Switching ---
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+function getPreferredTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    return savedTheme;
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+}
+
+// Initialize Theme
+setTheme(getPreferredTheme());
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  });
+}
+
 // Fallback shrinking header for browsers without native support
 if (!CSS.supports('(animation-timeline: scroll()) and (animation-range: 0% 100%)')) {
   const header = document.querySelector('header');
   if (header) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        header.style.backgroundColor = 'var(--color-bg-primary)';
         header.querySelector('.header-container').style.height = '60px';
       } else {
-        header.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+        header.style.backgroundColor = 'var(--color-bg-primary)';
         header.querySelector('.header-container').style.height = '80px';
       }
     });

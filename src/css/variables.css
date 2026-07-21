@@ -36,6 +36,18 @@
   --scroll-indicator-height: 3px;
 }
 
+[data-theme="dark"] {
+  --color-bg-primary: #0d0d0d;
+  --color-bg-secondary: #161617;
+  --color-text-primary: #f4f1ea;
+  --color-text-secondary: #a3a3a6;
+  --color-text-muted: #6e6e73;
+  --color-accent: #e28b4d; /* Warm Copper Accent for Dark Mode */
+  --color-accent-hover: #f09e62;
+  --color-border: #26262a;
+  --color-border-dark: #e2e2e7;
+}
+
 /* Base resets & scroll behavior */
 * {
   box-sizing: border-box;

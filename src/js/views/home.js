@@ -85,7 +85,10 @@ export async function renderHome(container) {
       <div class="container editorial-grid">
         <div class="about-grid-left">
           <span class="section-label">Sobre Mim</span>
-          <h2 style="font-size: 2.5rem; line-height: 1.2;">Quem sou, como penso e como trabalho.</h2>
+          <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: var(--space-md);">Quem sou, como penso e como trabalho.</h2>
+          <div class="profile-image-container">
+            <img src="/assets/images/foto_quem_sou_azul.png" alt="João Paulo Esmeraldo" class="profile-main-image" />
+          </div>
         </div>
         <div class="about-grid-right">
           <p class="about-intro">${profile.about.intro}</p>
@@ -208,8 +211,11 @@ export async function renderHome(container) {
       <div class="container editorial-grid">
         <div class="contact-grid-left">
           <span class="section-label">Contato</span>
-          <h2 style="font-size: 2.5rem; line-height: 1.2;">Vamos iniciar um projeto?</h2>
-          <p style="margin-top: var(--space-sm); color: var(--color-text-secondary);">
+          <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: var(--space-sm);">Vamos iniciar um projeto?</h2>
+          <div class="profile-image-container" style="margin-bottom: var(--space-sm);">
+            <img src="/assets/images/foto_contato_verde.png" alt="Contato João Paulo" class="profile-contact-image" />
+          </div>
+          <p style="color: var(--color-text-secondary);">
             Entre em contato para discutir posicionamento, discursos corporativos ou campanhas de comunicação de alto padrão.
           </p>
         </div>

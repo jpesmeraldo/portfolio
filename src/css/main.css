@@ -255,6 +255,40 @@ section.bg-sec {
   visibility: visible;
 }
 
+/* Profile Image styling */
+.profile-main-image, .profile-contact-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  filter: grayscale(10%);
+  transition: var(--transition-smooth);
+}
+
+.profile-main-image:hover, .profile-contact-image:hover {
+  filter: grayscale(0%);
+}
+
+.profile-image-container {
+  margin-top: var(--space-sm);
+  display: flex;
+}
+
+.profile-flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .profile-flex-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 #back-to-top:hover {
   background-color: var(--color-text-primary);
   color: var(--color-bg-primary);

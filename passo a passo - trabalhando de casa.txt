@@ -1,0 +1,71 @@
+==========================================================================
+MANUAL DE INSTRUÇÕES: TRABALHANDO NO PORTFÓLIO DE QUALQUER COMPUTADOR
+==========================================================================
+
+Este guia prático foi criado para que você possa continuar o desenvolvimento do seu portfólio e gerenciar seus conteúdos de qualquer máquina (casa, escritório ou notebook).
+
+--------------------------------------------------------------------------
+PRÉ-REQUISITOS (Instalar na nova máquina se ainda não tiver)
+--------------------------------------------------------------------------
+1. Node.js (versão 18 ou superior):
+   Baixe e instale a versão LTS de https://nodejs.org
+2. GitHub Desktop (opcional, mas altamente recomendado):
+   Baixe e instale de https://desktop.github.com
+3. Git:
+   Instalado automaticamente com o GitHub Desktop, ou baixe em https://git-scm.com
+
+--------------------------------------------------------------------------
+PASSO 1: BAIXAR O CÓDIGO DO PROJETO
+--------------------------------------------------------------------------
+Se for a primeira vez na máquina:
+1. Abra o GitHub Desktop.
+2. Vá em File > Clone Repository.
+3. Escolha o repositório "jpesmeraldo/portfolio" e selecione a pasta onde deseja salvar.
+
+Se você já clonou anteriormente nesta máquina:
+1. Abra o projeto no GitHub Desktop.
+2. Clique no botão azul "Fetch origin" (e depois "Pull origin" se houver novos commits) no topo para garantir que você está com a versão mais recente que foi trabalhada.
+
+--------------------------------------------------------------------------
+PASSO 2: INSTALAR AS DEPENDÊNCIAS DO SITE
+--------------------------------------------------------------------------
+1. Abra o terminal (Prompt de Comando no Windows ou Terminal no Mac) dentro da pasta do projeto.
+2. Digite o seguinte comando e aperte Enter:
+   
+   npm install
+
+   (Isso lerá o arquivo package.json e baixará todas as ferramentas necessárias, como o Vite).
+
+--------------------------------------------------------------------------
+PASSO 3: EXECUTAR O SITE LOCALMENTE (PARA PROGRAMAR E VER ALTERAÇÕES)
+--------------------------------------------------------------------------
+1. No terminal do projeto, execute o comando:
+   
+   npm run dev
+
+2. O terminal mostrará um endereço local, geralmente:
+   http://localhost:5173
+3. Copie e cole esse endereço no seu navegador para ver o site rodando localmente com atualizações em tempo real!
+
+--------------------------------------------------------------------------
+PASSO 4: COMO EDITAR E PUBLICAR CONTEÚDO (ÁREA ADMIN)
+--------------------------------------------------------------------------
+Como configuramos o redirecionador de login seguro (OAuth Gateway) na Vercel, a melhor forma de editar conteúdos é usar diretamente o painel de produção:
+
+1. Acesse o painel oficial em:
+   https://www.jpesmeraldo.com.br/admin
+2. Clique em "Entrar com GitHub".
+3. Altere o seu perfil, adicione/edite seus "Cases de Sucesso" usando o editor formatado (Quill) ou crie artigos na "Biblioteca de Textos".
+4. Ao clicar em "Publicar", o Decap CMS salvará as alterações diretamente no seu GitHub. A Vercel detectará essa mudança e atualizará o site oficial em menos de 1 minuto automaticamente!
+
+--------------------------------------------------------------------------
+PASSO 5: ENVIANDO MELHORIAS DE CÓDIGO E LAYOUT PARA O AR
+--------------------------------------------------------------------------
+Se você fizer alterações no código fonte (CSS, HTML, JS) na sua máquina de casa:
+1. Abra o GitHub Desktop. Ele mostrará todos os arquivos modificados.
+2. No canto inferior esquerdo, digite um resumo da alteração (Ex: "ajuste no estilo do botão") e clique no botão azul "Commit to main".
+3. Clique no botão "Push origin" no topo para enviar o código para o GitHub. O site de produção será atualizado automaticamente!
+
+==========================================================================
+Bons trabalhos! Se precisar de ajuda em qualquer etapa, estou por aqui.
+==========================================================================

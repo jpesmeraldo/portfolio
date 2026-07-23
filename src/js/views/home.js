@@ -179,6 +179,7 @@ export async function renderHome(container) {
     </section>
 
     <!-- Clients list Section -->
+    ${profile.show_clients ? `
     <section id="clientes">
       <div class="container editorial-grid">
         <div class="about-grid-left">
@@ -192,8 +193,10 @@ export async function renderHome(container) {
         </div>
       </div>
     </section>
+    ` : ''}
 
     <!-- Testimonials Section -->
+    ${profile.show_testimonials ? `
     <section id="depoimentos" class="bg-sec">
       <div class="container">
         <span class="section-label">Reconhecimento</span>
@@ -205,6 +208,7 @@ export async function renderHome(container) {
         </div>
       </div>
     </section>
+    ` : ''}
 
     <!-- Contact Section -->
     <section id="contato">

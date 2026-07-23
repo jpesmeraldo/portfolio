@@ -132,6 +132,16 @@ collections:
                 name: "behance"
                 widget: "string"
                 required: false
+          - label: "Exibir Seção de Clientes no Site"
+            name: "show_clients"
+            widget: "boolean"
+            default: false
+            required: false
+          - label: "Exibir Seção de Depoimentos no Site"
+            name: "show_testimonials"
+            widget: "boolean"
+            default: false
+            required: false
 
   - name: "cases_collection"
     label: "Cases de Sucesso (Portfólio)"

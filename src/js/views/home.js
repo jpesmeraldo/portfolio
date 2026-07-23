@@ -87,7 +87,7 @@ export async function renderHome(container) {
           <span class="section-label">Sobre Mim</span>
           <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: var(--space-md);">Quem sou, como penso e como trabalho.</h2>
           <div class="profile-image-container">
-            <img src="/assets/images/foto_quem_sou_azul.png" alt="João Paulo Esmeraldo" class="profile-main-image" />
+            <img src="/assets/images/foto_quem_sou_bege.png" alt="João Paulo Esmeraldo" class="profile-main-image" />
           </div>
         </div>
         <div class="about-grid-right">

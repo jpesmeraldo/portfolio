@@ -62,7 +62,7 @@ collections:
             name: "specialties"
             widget: "list"
             label_singular: "Especialidade"
-            summary: "{{fields.title}}"
+            summary: "{{title}}"
             required: false
             fields:
               - label: "Título da Especialidade"
@@ -77,7 +77,7 @@ collections:
             name: "methodology"
             widget: "list"
             label_singular: "Etapa"
-            summary: "{{fields.step}} - {{fields.name}}"
+            summary: "{{step}} - {{name}}"
             required: false
             fields:
               - label: "Número (Ex: 01)"
@@ -96,7 +96,7 @@ collections:
             name: "clients"
             widget: "list"
             label_singular: "Cliente"
-            summary: "{{fields.name}}"
+            summary: "{{name}}"
             required: false
             fields:
               - label: "Nome do Cliente/Setor"
@@ -157,7 +157,7 @@ collections:
             name: "cases"
             widget: "list"
             label_singular: "Estudo de Caso"
-            summary: "{{fields.title}} ({{fields.client}})"
+            summary: "{{title}} ({{client}})"
             required: false
             fields:
               - label: "Identificador (Slug único - ex: sao-joao-fortaleza)"
@@ -219,7 +219,7 @@ collections:
                 name: "gallery"
                 widget: "list"
                 label_singular: "Peça"
-                summary: "{{fields.type}} - {{fields.caption}}"
+                summary: "{{type}} - {{caption}}"
                 required: false
                 fields:
                   - label: "Tipo"
@@ -261,7 +261,7 @@ collections:
             name: "texts"
             widget: "list"
             label_singular: "Texto"
-            summary: "{{fields.title}} [{{fields.category}}]"
+            summary: "{{title}} [{{category}}]"
             required: false
             fields:
               - label: "Identificador (Slug único - ex: valor-silencio)"

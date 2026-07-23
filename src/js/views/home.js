@@ -10,14 +10,14 @@ export async function renderHome(container) {
   const recentCases = allCases.slice(0, 3);
   const recentTexts = allTexts.slice(0, 3);
 
-  const specialtiesHtml = profile.specialties.map(spec => `
+  const specialtiesHtml = (profile.specialties || []).map(spec => `
     <div class="specialty-card">
       <h3 class="specialty-title">${spec.title}</h3>
       <p class="specialty-desc">${spec.description}</p>
     </div>
   `).join('');
 
-  const methodologyHtml = profile.methodology.map(step => `
+  const methodologyHtml = (profile.methodology || []).map(step => `
     <div class="methodology-step">
       <span class="step-num">${step.step}</span>
       <h3 class="step-title">${step.name}</h3>
@@ -52,7 +52,7 @@ export async function renderHome(container) {
     </a>
   `).join('');
 
-  const testimonialsHtml = profile.testimonials.map(test => `
+  const testimonialsHtml = (profile.testimonials || []).map(test => `
     <div class="testimonial-card">
       <p class="testimonial-quote">“${test.quote}”</p>
       <div>
@@ -62,7 +62,7 @@ export async function renderHome(container) {
     </div>
   `).join('');
 
-  const clientsHtml = profile.clients.map(client => `
+  const clientsHtml = (profile.clients || []).map(client => `
     <li style="padding: var(--space-xs) 0; border-bottom: 1px solid var(--color-border); display: flex; justify-content: space-between;">
       <strong>${client.name}</strong>
       <span style="color: var(--color-text-muted); font-size: 0.9rem;">${client.sector}</span>

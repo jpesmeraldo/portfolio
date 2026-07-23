@@ -10,7 +10,7 @@ export async function renderCaseDetail(container, params) {
   }
 
   // Generate gallery items
-  const galleryHtml = item.gallery.map(media => {
+  const galleryHtml = (item.gallery && Array.isArray(item.gallery)) ? item.gallery.map(media => {
     if (media.type === 'vimeo') {
       return `
         <div class="gallery-item">
@@ -67,7 +67,7 @@ export async function renderCaseDetail(container, params) {
         </div>
       `;
     }
-  }).join('');
+  }).join('') : '';
 
   container.innerHTML = `
     <div class="container" style="padding-top: var(--space-md);">

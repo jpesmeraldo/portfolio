@@ -21,11 +21,17 @@
     <script>
       // Register custom Quill rich text editor widget
       const QuillControl = createClass({
+        // Prevent React from ever updating or reconciling this component's DOM after mounting.
+        // This is critical to prevent React virtual DOM conflicts with Quill's direct DOM manipulations.
+        shouldComponentUpdate: function() {
+          return false;
+        },
         handleChange: function(value) {
           this.props.onChange(value);
         },
         componentDidMount: function() {
           const container = this.quillContainer;
+          if (!container) return;
           
           // Configure toolbar options including fonts, alignment, sizes, formatting
           const quill = new Quill(container, {
@@ -52,25 +58,12 @@
           
           // Send updates back to Decap CMS state
           quill.on('text-change', () => {
-            if (container) {
-              const editorEl = container.querySelector('.ql-editor');
-              const html = editorEl ? editorEl.innerHTML : '';
-              if (html !== this.props.value) {
-                this.handleChange(html);
-              }
+            const editorEl = container.querySelector('.ql-editor');
+            const html = editorEl ? editorEl.innerHTML : '';
+            if (html !== this.props.value) {
+              this.handleChange(html);
             }
           });
-        },
-        componentDidUpdate: function(prevProps) {
-          if (this.quill && this.quillContainer && this.props.value !== prevProps.value) {
-            const editorEl = this.quillContainer.querySelector('.ql-editor');
-            if (editorEl) {
-              const currentHtml = editorEl.innerHTML;
-              if (this.props.value !== currentHtml) {
-                this.quill.clipboard.dangerouslyPasteHTML(this.props.value || '');
-              }
-            }
-          }
         },
         render: function() {
           return h('div', {
@@ -86,9 +79,11 @@
 
       const QuillPreview = createClass({
         render: function() {
+          const val = this.props.value || '';
+          const htmlContent = (typeof val === 'string') ? val : (val.toString ? val.toString() : '');
           return h('div', {
             style: { padding: '10px' },
-            dangerouslySetInnerHTML: { __html: this.props.value }
+            dangerouslySetInnerHTML: { __html: htmlContent }
           });
         }
       });

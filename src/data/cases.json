@@ -1,67 +1,67 @@
 {
   "cases": [
     {
-      "slug": "sao-joao-de-fortaleza-2015",
-      "title": "Campanha de Mobilização e Tradição: São João de Fortaleza",
-      "client": "Secretaria Municipal de Cultura / Prefeitura de Fortaleza",
-      "category": "Campanhas Públicas",
-      "year": "2015",
-      "image": "assets/images/sao_joao_cover.jpg",
-      "context": "O São João de Fortaleza consolidou-se como um dos maiores eventos juninos urbanos do país, celebrando a identidade nordestina. Em 2015, a gestão pública precisava mobilizar a população em torno de uma mensagem que unisse a tradição cultural ao orgulho de viver na cidade, fomentando o turismo e a economia local sob forte scrutiny de aplicação de recursos públicos.",
       "challenge": "Desenvolver um conceito criativo e um roteiro de vídeo que sensibilizassem tanto o público local quanto o nacional, justificando a relevância cultural do evento e estimulando a apropriação comunitária, equilibrando o tom festivo com a responsabilidade da comunicação institucional pública.",
-      "strategy": "Apostar na força do pertencimento territorial e na ancestralidade junina. A narrativa foi construída ao redor da ideia de que o São João não é apenas um evento turístico, mas o resgate de uma raiz que vive no cotidiano do fortalezense. O conceito de comunicação amarrou a festividade à história das quadrilhas comunitárias da periferia, dando destaque aos verdadeiros protagonistas da festa.",
-      "role": "Redação do Manifesto de Posicionamento, Roteirização do VT Promocional de 60 segundos, e curadoria de mensagens-chave para coletiva de imprensa e mídia digital.",
-      "solution": "Criamos um roteiro dinâmico e emocional que conectou o som da sanfona e o movimento da quadrilha aos cartões-postais e à diversidade de Fortaleza. O tom institucional foi assegurado através de uma locução sóbria, porém calorosa, que enalteceu o investimento na economia da cultura.",
-      "results": "O vídeo oficial da campanha alcançou ampla veiculação na TV aberta e mídias sociais, gerando engajamento recorde para a comunicação da Prefeitura. A cobertura orgânica de imprensa foi amplificada devido à clareza das mensagens institucionais distribuídas.",
+      "slug": "sao-joao-de-fortaleza-2015",
+      "client": "Secretaria Municipal de Cultura / Prefeitura de Fortaleza",
+      "context": "O São João de Fortaleza consolidou-se como um dos maiores eventos juninos urbanos do país, celebrando a identidade nordestina. Em 2015, a gestão pública precisava mobilizar a população em torno de uma mensagem que unisse a tradição cultural ao orgulho de viver na cidade, fomentando o turismo e a economia local sob forte scrutiny de aplicação de recursos públicos.",
       "gallery": [
         {
           "type": "vimeo",
           "vimeoId": "1210623163",
           "caption": "Filme oficial da campanha de 60 segundos veiculado em TV aberta e meios digitais."
         }
-      ]
+      ],
+      "strategy": "Apostar na força do pertencimento territorial e na ancestralidade junina. A narrativa foi construída ao redor da ideia de que o São João não é apenas um evento turístico, mas o resgate de uma raiz que vive no cotidiano do fortalezense. O conceito de comunicação amarrou a festividade à história das quadrilhas comunitárias da periferia, dando destaque aos verdadeiros protagonistas da festa.",
+      "role": "Redação do Manifesto de Posicionamento, Roteirização do VT Promocional de 60 segundos, e curadoria de mensagens-chave para coletiva de imprensa e mídia digital.",
+      "results": "O vídeo oficial da campanha alcançou ampla veiculação na TV aberta e mídias sociais, gerando engajamento recorde para a comunicação da Prefeitura. A cobertura orgânica de imprensa foi amplificada devido à clareza das mensagens institucionais distribuídas.",
+      "title": "Campanha de Mobilização e Tradição: São João de Fortaleza",
+      "solution": "Criamos um roteiro dinâmico e emocional que conectou o som da sanfona e o movimento da quadrilha aos cartões-postais e à diversidade de Fortaleza. O tom institucional foi assegurado através de uma locução sóbria, porém calorosa, que enalteceu o investimento na economia da cultura.",
+      "image": "assets/images/captura-de-tela-2026-07-23-às-15.18.50.png",
+      "year": "2015",
+      "category": "Eventos"
     },
     {
-      "slug": "esg-neoenergias-2023",
-      "title": "Narrativa ESG e Relacionamento com Acionistas: NeoEnergias",
-      "client": "NeoEnergias Brasil",
-      "category": "ESG / Relatórios Anuais",
-      "year": "2023",
-      "image": "assets/images/esg_cover.jpg",
-      "context": "Em um cenário global altamente focado em transição energética e finanças verdes, a NeoEnergias precisava apresentar seu Relatório de Sustentabilidade para investidores nacionais e estrangeiros. O principal obstáculo era o excesso de termos técnicos herméticos e a falta de uma linha narrativa que ligasse as metas de descarbonização às realidades das comunidades locais impactadas.",
       "challenge": "Sintetizar centenas de páginas de dados de engenharia, métricas de biodiversidade e índices de governança corporativa em um texto fluido, transparente e de forte apelo institucional, atendendo às normas do GRI (Global Reporting Initiative).",
-      "strategy": "Estruturar o relatório com base no conceito 'Energia que Gera Transformação'. Humanizamos os dados transformando números de megawatts gerados em histórias de comunidades do semiárido que receberam eletrificação limpa e inclusão social. O texto manteve rigor técnico nas seções financeiras e fluidez narrativa nas seções ambientais e sociais.",
-      "role": "Consultoria de tom de voz para o comitê ESG, redação executiva das seções 'Carta da Presidência', 'Impacto Comunitário' e edição final de conformidade estilística.",
-      "solution": "Dividimos o relatório em três grandes pilares com textos introdutórios que funcionaram como micro-manifestos. Empregamos um design de parágrafos curtos, sentenças diretas e títulos equilibrados no estilo editorial da McKinsey.",
-      "results": "O relatório foi classificado entre as melhores publicações de sustentabilidade do setor elétrico de 2023, recebendo feedbacks positivos de comitês de investimento internacionais pela transparência e excelente legibilidade de suas teses de governança.",
+      "slug": "esg-neoenergias-2023",
+      "client": "NeoEnergias Brasil",
+      "context": "Em um cenário global altamente focado em transição energética e finanças verdes, a NeoEnergias precisava apresentar seu Relatório de Sustentabilidade para investidores nacionais e estrangeiros. O principal obstáculo era o excesso de termos técnicos herméticos e a falta de uma linha narrativa que ligasse as metas de descarbonização às realidades das comunidades locais impactadas.",
       "gallery": [
         {
           "type": "image",
           "src": "assets/images/esg_gallery_1.jpg",
           "caption": "Páginas internas destacando o design editorial focado em tipografia refinada e dados infográficos integrados."
         }
-      ]
+      ],
+      "strategy": "Estruturar o relatório com base no conceito 'Energia que Gera Transformação'. Humanizamos os dados transformando números de megawatts gerados em histórias de comunidades do semiárido que receberam eletrificação limpa e inclusão social. O texto manteve rigor técnico nas seções financeiras e fluidez narrativa nas seções ambientais e sociais.",
+      "role": "Consultoria de tom de voz para o comitê ESG, redação executiva das seções 'Carta da Presidência', 'Impacto Comunitário' e edição final de conformidade estilística.",
+      "results": "O relatório foi classificado entre as melhores publicações de sustentabilidade do setor elétrico de 2023, recebendo feedbacks positivos de comitês de investimento internacionais pela transparência e excelente legibilidade de suas teses de governança.",
+      "title": "Narrativa ESG e Relacionamento com Acionistas: NeoEnergias",
+      "solution": "Dividimos o relatório em três grandes pilares com textos introdutórios que funcionaram como micro-manifestos. Empregamos um design de parágrafos curtos, sentenças diretas e títulos equilibrados no estilo editorial da McKinsey.",
+      "image": "assets/images/esg_cover.jpg",
+      "year": "2023",
+      "category": "ESG / Relatórios Anuais"
     },
     {
-      "slug": "posicionamento-techlog",
-      "title": "Redefinição de Categoria e Manifesto de Marca: TechLog",
-      "client": "TechLog Soluções Integradas",
-      "category": "Branding / Posicionamento",
-      "year": "2024",
-      "image": "assets/images/techlog_cover.jpg",
-      "context": "A TechLog deixou de ser uma transportadora local para se tornar uma plataforma inteligente de logística internacional baseada em inteligência artificial. A empresa precisava de um manifesto institucional capaz de unificar a nova cultura interna e explicar o novo momento de mercado a grandes clientes corporativos.",
       "challenge": "Evitar os clichês repetitivos do setor de tecnologia (como 'inovação disruptiva' e 'soluções ágeis') e construir uma narrativa proprietária, sólida e respeitável, sintonizada com tomadores de decisão de nível executivo (C-Level).",
-      "strategy": "Focar na previsibilidade e na precisão matemática em oposição ao caos operacional da logística clássica. O manifesto centrou-se no conceito de 'A Engenharia do Fluxo', posicionando a empresa não como um fornecedor de veículos, mas como uma arquiteta de estabilidade de cadeia de suprimentos.",
-      "role": "Redação integral do Manifesto Institucional de Marca, concepção da assinatura corporativa e treinamento de tom de voz para a equipe interna de comunicação.",
-      "solution": "Redigimos um manifesto marcante que serve como peça central do site e de vídeos institucionais da empresa. A linguagem utilizou frases de efeito cirúrgico, ritmo constante e contrastes textuais inteligentes.",
-      "results": "O manifesto gerou alinhamento imediato entre o conselho administrativo e a equipe de desenvolvimento de produtos, servindo como base criativa para o lançamento bem-sucedido da nova marca no mercado financeiro.",
+      "slug": "posicionamento-techlog",
+      "client": "TechLog Soluções Integradas",
+      "context": "A TechLog deixou de ser uma transportadora local para se tornar uma plataforma inteligente de logística internacional baseada em inteligência artificial. A empresa precisava de um manifesto institucional capaz de unificar a nova cultura interna e explicar o novo momento de mercado a grandes clientes corporativos.",
       "gallery": [
         {
           "type": "image",
           "src": "assets/images/techlog_gallery_1.jpg",
           "caption": "Manifesto impresso enviado em formato editorial especial para os principais clientes corporativos da companhia."
         }
-      ]
+      ],
+      "strategy": "Focar na previsibilidade e na precisão matemática em oposição ao caos operacional da logística clássica. O manifesto centrou-se no conceito de 'A Engenharia do Fluxo', posicionando a empresa não como um fornecedor de veículos, mas como uma arquiteta de estabilidade de cadeia de suprimentos.",
+      "role": "Redação integral do Manifesto Institucional de Marca, concepção da assinatura corporativa e treinamento de tom de voz para a equipe interna de comunicação.",
+      "results": "O manifesto gerou alinhamento imediato entre o conselho administrativo e a equipe de desenvolvimento de produtos, servindo como base criativa para o lançamento bem-sucedido da nova marca no mercado financeiro.",
+      "title": "Redefinição de Categoria e Manifesto de Marca: TechLog",
+      "solution": "Redigimos um manifesto marcante que serve como peça central do site e de vídeos institucionais da empresa. A linguagem utilizou frases de efeito cirúrgico, ritmo constante e contrastes textuais inteligentes.",
+      "image": "assets/images/techlog_cover.jpg",
+      "year": "2024",
+      "category": "Branding / Posicionamento"
     }
   ]
 }

@@ -35,7 +35,7 @@ export class Router {
     
     // Support routing to sections on the homepage (e.g. /sobre, /especialidades)
     let sectionId = '';
-    const basePaths = ['sobre', 'especialidades', 'metodologia', 'contato', 'cases', 'depoimentos', 'clientes'];
+    const basePaths = ['sobre', 'especialidades', 'metodologia', 'contato', 'depoimentos', 'clientes'];
     const parts = path.split('/');
     if (parts.length === 2 && basePaths.includes(parts[1])) {
       sectionId = parts[1];
@@ -58,7 +58,7 @@ export class Router {
         if (route.path.includes(':')) {
           const paramNames = [...route.path.matchAll(/:(\w+)/g)].map(m => m[1]);
           paramNames.forEach((name, index) => {
-            params[name] = match[index + 1];
+            params[name] = decodeURIComponent(match[index + 1]);
           });
         }
         break;

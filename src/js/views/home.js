@@ -166,7 +166,7 @@ export async function renderHome(container) {
         <div class="cases-section-header">
           <div>
             <span class="section-label">Biblioteca de Textos</span>
-            <h2 style="font-size: 2.5rem;">Redação Estratégica e Peças Conceptuais</h2>
+            <h2 style="font-size: 2.5rem;">Redação Estratégica e Peças Conceituais</h2>
           </div>
           <a href="/biblioteca" class="hero-cta" style="margin-top: 0;">Explorar Biblioteca</a>
         </div>

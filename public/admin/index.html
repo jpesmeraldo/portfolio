@@ -52,17 +52,23 @@
           
           // Send updates back to Decap CMS state
           quill.on('text-change', () => {
-            const html = container.querySelector('.ql-editor').innerHTML;
-            if (html !== this.props.value) {
-              this.handleChange(html);
+            if (container) {
+              const editorEl = container.querySelector('.ql-editor');
+              const html = editorEl ? editorEl.innerHTML : '';
+              if (html !== this.props.value) {
+                this.handleChange(html);
+              }
             }
           });
         },
         componentDidUpdate: function(prevProps) {
-          if (this.quill && this.props.value !== prevProps.value) {
-            const currentHtml = this.quillContainer.querySelector('.ql-editor').innerHTML;
-            if (this.props.value !== currentHtml) {
-              this.quill.clipboard.dangerouslyPasteHTML(this.props.value || '');
+          if (this.quill && this.quillContainer && this.props.value !== prevProps.value) {
+            const editorEl = this.quillContainer.querySelector('.ql-editor');
+            if (editorEl) {
+              const currentHtml = editorEl.innerHTML;
+              if (this.props.value !== currentHtml) {
+                this.quill.clipboard.dangerouslyPasteHTML(this.props.value || '');
+              }
             }
           }
         },

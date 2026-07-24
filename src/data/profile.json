@@ -41,7 +41,7 @@
       "description": "Finalização do material em texto pronto para aplicação em formatos definidos em briefing, com garantia de acompanhamento até o final do ciclo do contrato."
     }
   ],
-  "show_clients": false,
+  "show_clients": true,
   "clients": [
     {
       "name": "Governo do Estado do Ceará",
@@ -56,7 +56,7 @@
       "sector": "Planejamento e execução de campanhas institucionais, de utilidade pública e mobilização."
     },
     {
-      "name": "Consultorias de Reputação e PR",
+      "name": "Redação Estratégica e RRPP",
       "sector": "Campanhas políticas de grande impacto, com foco em planejamento e criação para rádio e televisão."
     }
   ],

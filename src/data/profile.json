@@ -4,6 +4,7 @@
     "whatsapp": "https://wa.me/5585996715464",
     "linkedin": "https://www.linkedin.com/in/jpesmeraldo/"
   },
+  "show_methodology": false,
   "methodology": [
     {
       "step": "01",
@@ -83,6 +84,7 @@
   ],
   "show_testimonials": false,
   "title": "Redator Estratégico & Especialista em Comunicação Institucional",
+  "show_library": true,
   "specialties": [
     {
       "title": "Campanhas Políticas & Governamentais",
@@ -100,9 +102,5 @@
       "title": "Comunicação Corporativa & ESG",
       "description": "Gestão de crise, reposicionamento e estratégias de relações públicas."
     }
-  ],
-  "show_clients": false,
-  "show_testimonials": false,
-  "show_methodology": true,
-  "show_library": true
+  ]
 }

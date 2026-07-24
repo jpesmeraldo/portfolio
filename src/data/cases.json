@@ -44,24 +44,25 @@
       "category": "Campanhas Públicas"
     },
     {
-      "challenge": "Evitar os clichês repetitivos do setor de tecnologia (como 'inovação disruptiva' e 'soluções ágeis') e construir uma narrativa proprietária, sólida e respeitável, sintonizada com tomadores de decisão de nível executivo (C-Level).",
-      "slug": "posicionamento-techlog",
-      "client": "TechLog Soluções Integradas",
-      "context": "A TechLog deixou de ser uma transportadora local para se tornar uma plataforma inteligente de logística internacional baseada em inteligência artificial. A empresa precisava de um manifesto institucional capaz de unificar a nova cultura interna e explicar o novo momento de mercado a grandes clientes corporativos.",
+      "challenge": "<p>A oposição era forte, com Elmano de Freitas, do PT, que vinha de uma indicação às pressas, e Cap. Wagner, do União Brasil, em ampla vantagem contabilizada por todas as mais respeitadas pesquisas daquele momento. Precisávamos ser cirúrgicos em todos os momentos, com mensagens assertivas e eficazes, especialmente no interior do estado, onde o nosso candidato precisava ser melhor conhecido.</p>",
+      "slug": "roberto-claudio-2022",
+      "client": "Roberto Cláudio - PDT",
+      "context": "<p>Roberto Cláudio havia sido prefeito de Fortaleza, eleito e reeleito, bem avaliado e muito bem posicionado diante da população da Região Metropolitana de Fortaleza. Acabou sendo escolhido pelo seu partido na ocasião, o PDT, para disputar a vaga de Governador do Ceará. A liderança das pesquisas na RMF precisava se repetir no restante do estado, o que exigiria de todos muita dedicação, criatividade e agilidade!</p>",
       "gallery": [
         {
-          "type": "image",
-          "src": "assets/images/techlog_gallery_1.jpg",
-          "caption": "Manifesto impresso enviado em formato editorial especial para os principais clientes corporativos da companhia."
+          "youtubeId": "https://www.youtube.com/playlist?list=PLi1K2-hL0FuPKWN-vbcIJzMM-i4cqSMmu",
+          "caption": "Playlist da nossa atuação no rádio e na web: Roberto Cláudio POD",
+          "src": "assets/images/captura-de-tela-2026-07-24-às-17.44.46.png",
+          "type": "youtube"
         }
       ],
-      "strategy": "Focar na previsibilidade e na precisão matemática em oposição ao caos operacional da logística clássica. O manifesto centrou-se no conceito de 'A Engenharia do Fluxo', posicionando a empresa não como um fornecedor de veículos, mas como uma arquiteta de estabilidade de cadeia de suprimentos.",
-      "role": "Redação integral do Manifesto Institucional de Marca, concepção da assinatura corporativa e treinamento de tom de voz para a equipe interna de comunicação.",
-      "results": "O manifesto gerou alinhamento imediato entre o conselho administrativo e a equipe de desenvolvimento de produtos, servindo como base criativa para o lançamento bem-sucedido da nova marca no mercado financeiro.",
-      "title": "Redefinição de Categoria e Manifesto de Marca: TechLog",
-      "solution": "Redigimos um manifesto marcante que serve como peça central do site e de vídeos institucionais da empresa. A linguagem utilizou frases de efeito cirúrgico, ritmo constante e contrastes textuais inteligentes.",
-      "image": "assets/images/techlog_cover.jpg",
-      "year": "2024",
+      "strategy": "<p>Em busca de replicar o sucesso do nosso candidato no interior do Ceará, buscamos mostrar os resultados extraordinários de seus oito anos à frente da Prefeitura da capital, Fortaleza, especialmente durante os anos mais difíceis da pandemia de Covid-19, quando a imagem de chefe do executivo da maior cidade do Ceará se somou à de médico, sua formação. Com isso, conseguimos destacar, além do racional, o seu lado humano, o que culminou na criação do slogan \"RC: Razão e Coração\", que serviu para aproximá-lo do povo cearense.</p>",
+      "role": "<p>No rádio, onde me concentrei para esta campanha, desenvolvemos diversos jingles e programas de rádio no formato Podcast, com apresentação dinâmica e divertida, revezada entre um apresentador institucional e uma apresentadora com a voz do povo.</p>",
+      "results": "<p>O podcast foi um sucesso tanto junto aos clientes (candidato, partido e coligação), como diante do público-alvo em suas mais diversas estratificações, que reagiu positivamente tanto ao formato inovador, quanto às inserções e jingles criados.</p>",
+      "title": "Roberto Cláudio Governador 2022",
+      "solution": "<p>Cada roteiro do podcast reproduzia, guardadas as devidas proporções, o conteúdo dos programas de TV, o que culminava em maior entendimento pelos públicos e reverberação da campanha como um todo, inclusive com postagem de cortes do programa em todas as redes sociais, com link para os episódios completos no YouTube. Além disso, criamos diversas inserções (spots) para rádio e internet.</p>",
+      "image": "assets/images/captura-de-tela-2026-07-24-às-17.43.06.png",
+      "year": "Agosto 2022",
       "category": "Branding / Posicionamento"
     }
   ]

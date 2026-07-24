@@ -41,7 +41,7 @@
       "description": "Finalização do material em texto pronto para aplicação em formatos definidos em briefing, com garantia de acompanhamento até o final do ciclo do contrato."
     }
   ],
-  "show_clients": true,
+  "show_clients": false,
   "clients": [
     {
       "name": "Governo do Estado do Ceará",

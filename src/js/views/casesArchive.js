@@ -32,19 +32,12 @@ export async function renderCasesArchive(container) {
   }
 
   container.innerHTML = `
-    <div class="container archive-title-section editorial-grid" style="align-items: center; margin-bottom: var(--space-md);">
-      <div class="archive-header-text" style="grid-column: span 12;">
-        <span class="section-label">Portfólio</span>
-        <h1 class="archive-title" style="margin-bottom: var(--space-sm);">Cases de Comunicação Estratégica</h1>
-        <div class="profile-flex-container">
-          <p style="max-width: 600px; color: var(--color-text-secondary); line-height: 1.6;">
-            Estudos de caso detalhando o diagnóstico, posicionamento e redação desenvolvidos para marcas corporativas e campanhas públicas.
-          </p>
-          <div class="profile-image-container" style="margin: 0;">
-            <img src="/assets/images/foto_cases_tablet.jpg" alt="Estudos de caso" class="profile-main-image" style="max-width: 240px;" />
-          </div>
-        </div>
-      </div>
+    <div class="container archive-title-section">
+      <span class="section-label">Portfólio</span>
+      <h1 class="archive-title">Cases de Comunicação Estratégica</h1>
+      <p style="max-width: 600px; color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Estudos de caso detalhando o diagnóstico, posicionamento e redação desenvolvidos para marcas corporativas e campanhas públicas.
+      </p>
     </div>
 
     <div class="container">

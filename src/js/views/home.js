@@ -28,10 +28,13 @@ export async function renderHome(container) {
   const casesHtml = recentCases.map(c => `
     <a href="/case/${c.slug}" class="case-card">
       <div class="case-card-image">
-        <!-- Generates inline placeholder design or default editorial preview -->
-        <div style="padding: 2rem; text-align: center;">
-          <span style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--color-accent);">${c.client}</span>
-        </div>
+        ${c.image ? `
+          <img src="${c.image.startsWith('/') ? c.image : '/' + c.image}" alt="${c.title}" style="width: 100%; height: 100%; object-fit: cover;" />
+        ` : `
+          <div style="padding: 2rem; text-align: center;">
+            <span style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--color-accent);">${c.client}</span>
+          </div>
+        `}
       </div>
       <div class="case-card-meta">
         <span>${c.category}</span>

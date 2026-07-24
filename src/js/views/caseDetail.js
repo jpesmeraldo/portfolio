@@ -85,6 +85,12 @@ export async function renderCaseDetail(container, params) {
         <h1 class="case-detail-title">${item.title}</h1>
       </div>
 
+      ${item.image ? `
+        <div class="case-cover-container" style="margin-bottom: var(--space-md);">
+          <img src="${item.image.startsWith('/') ? item.image : '/' + item.image}" alt="${item.title}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border);" />
+        </div>
+      ` : ''}
+
       <!-- Grid layout: Meta Sidebar + Main body -->
       <div class="editorial-grid">
         <div class="case-meta-sidebar">

@@ -1,6 +1,7 @@
 import profile from '../../data/profile.json';
 import cases from '../../data/cases.json';
 import texts from '../../data/texts.json';
+import { formatDatePT } from '../utils.js';
 
 export async function renderHome(container) {
   const allCases = Array.isArray(cases) ? cases : (cases.cases || []);
@@ -49,7 +50,7 @@ export async function renderHome(container) {
       <div class="text-feed-main">
         <div class="text-feed-header">
           <span class="text-feed-category">${t.category}</span>
-          <span class="text-feed-date">${t.date}</span>
+          <span class="text-feed-date">${formatDatePT(t.date)}</span>
         </div>
         <h3 class="text-feed-title">${t.title}</h3>
         <p class="text-feed-excerpt">${t.intro}</p>

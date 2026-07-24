@@ -1,5 +1,6 @@
 import texts from '../../data/texts.json';
 import profile from '../../data/profile.json';
+import { formatDatePT } from '../utils.js';
 
 export async function renderTextDetail(container, params) {
   const allTexts = Array.isArray(texts) ? texts : (texts.texts || []);
@@ -47,7 +48,7 @@ export async function renderTextDetail(container, params) {
               </a>
             </div>
             <div class="article-author-role">Redator Sênior & Estrategista de Comunicação</div>
-            <div class="article-date">${item.date}</div>
+            <div class="article-date">${formatDatePT(item.date)}</div>
           </div>
         </div>
       </div>

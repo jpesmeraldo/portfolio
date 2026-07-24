@@ -13,12 +13,19 @@ export async function renderTextsArchive(container) {
 
     return filteredTexts.map(t => `
       <a href="/texto/${t.slug}" class="text-feed-item">
-        <div class="text-feed-header">
-          <span class="text-feed-category">${t.category}</span>
-          <span class="text-feed-date">${t.date}</span>
+        <div class="text-feed-main">
+          <div class="text-feed-header">
+            <span class="text-feed-category">${t.category}</span>
+            <span class="text-feed-date">${t.date}</span>
+          </div>
+          <h3 class="text-feed-title">${t.title}</h3>
+          <p class="text-feed-excerpt">${t.intro}</p>
         </div>
-        <h3 class="text-feed-title">${t.title}</h3>
-        <p class="text-feed-excerpt">${t.intro}</p>
+        ${t.image ? `
+          <div class="text-feed-thumbnail-wrapper">
+            <img src="${t.image.startsWith('/') ? t.image : '/' + t.image}" alt="${t.title}" class="text-feed-thumbnail" />
+          </div>
+        ` : ''}
       </a>
     `).join('');
   }

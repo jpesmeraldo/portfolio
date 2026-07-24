@@ -300,6 +300,14 @@ collections:
                 name: "date"
                 widget: "string"
                 required: false
+              - label: "Imagem de Capa / Thumbnail"
+                name: "image"
+                widget: "image"
+                required: false
+              - label: "Legenda da Imagem de Capa (Ex: Imagem: Luerzers Archive)"
+                name: "imageCaption"
+                widget: "string"
+                required: false
               - label: "Introdução / Contexto"
                 name: "intro"
                 widget: "text"

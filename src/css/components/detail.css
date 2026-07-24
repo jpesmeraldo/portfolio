@@ -155,6 +155,82 @@
   font-style: italic;
 }
 
+/* Hero Cover Image & Caption (LinkedIn Article Style) */
+.article-hero-cover-container {
+  width: 100%;
+  margin-bottom: var(--space-md);
+}
+
+.article-hero-cover-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  display: block;
+}
+
+.article-cover-caption {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
+
+/* Author Profile Bar (LinkedIn / Editorial Style) */
+.article-author-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+}
+
+.article-author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.article-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.article-author-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-linkedin-badge {
+  display: inline-flex;
+  align-items: center;
+  color: #0a66c2;
+  transition: opacity var(--transition-fast);
+}
+
+.article-linkedin-badge:hover {
+  opacity: 0.8;
+}
+
+.article-author-role {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.article-date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
 /* Text Detail layout (Reading format) */
 .text-detail-container {
   max-width: 750px;

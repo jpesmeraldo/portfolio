@@ -1,27 +1,6 @@
 {
   "cases": [
     {
-      "challenge": "Desenvolver um conceito criativo e um roteiro de vídeo que sensibilizassem tanto o público local quanto o nacional, justificando a relevância cultural do evento e estimulando a apropriação comunitária, equilibrando o tom festivo com a responsabilidade da comunicação institucional pública.",
-      "slug": "sao-joao-de-fortaleza-2015",
-      "client": "Secretaria Municipal de Cultura / Prefeitura de Fortaleza",
-      "context": "<p>O São João de Fortaleza consolidou-se como um dos maiores eventos juninos urbanos do país, celebrando a identidade nordestina. Em 2015, a gestão pública precisava mobilizar a população em torno de uma mensagem que unisse a tradição cultural ao orgulho de viver na cidade, fomentando o turismo e a economia local sob forte escrutínio de aplicação de recursos públicos.</p>",
-      "gallery": [
-        {
-          "type": "vimeo",
-          "vimeoId": "1210623163",
-          "caption": "Filme oficial da campanha de 60 segundos veiculado em TV aberta e meios digitais."
-        }
-      ],
-      "strategy": "Apostar na força do pertencimento territorial e na ancestralidade junina. A narrativa foi construída ao redor da ideia de que o São João não é apenas um evento turístico, mas o resgate de uma raiz que vive no cotidiano do fortalezense. O conceito de comunicação amarrou a festividade à história das quadrilhas comunitárias da periferia, dando destaque aos verdadeiros protagonistas da festa.",
-      "role": "<p>Redação do manifesto de posicionamento, redação das peças impressas e digitais, incluindo roteiro e concepção do Filme Promocional de 60 segundos, além de curadoria de mensagens para coletiva de imprensa e mídia digital.</p>",
-      "results": "O vídeo oficial da campanha alcançou ampla veiculação na TV aberta e mídias sociais, gerando engajamento recorde para a comunicação da Prefeitura. A cobertura orgânica de imprensa foi amplificada devido à clareza das mensagens institucionais distribuídas.",
-      "title": "São João de Fortaleza 2015",
-      "solution": "Criamos um roteiro dinâmico e emocional que conectou o som da sanfona e o movimento da quadrilha aos cartões-postais e à diversidade de Fortaleza. O tom institucional foi assegurado através de uma locução sóbria, porém calorosa, que enalteceu o investimento na economia da cultura.",
-      "image": "assets/images/captura-de-tela-2026-07-23-às-15.18.50.png",
-      "year": "2015",
-      "category": "Eventos"
-    },
-    {
       "challenge": "<p>Construir uma imagem positiva em volta daquela que o público percebia como negativa, esse seria o maior desafio. Claro que o objetivo maior era conseguir reeleger o prefeito, mas, mesmo se não conseguíssemos, era fundamental construir um legado, uma reputação positiva para quem já estava marcado pela falta de percepção de presença diante do povo.</p>",
       "slug": "campanha-Sarto-prefeito-2024",
       "client": "José Sarto",
@@ -64,6 +43,27 @@
       "image": "assets/images/captura-de-tela-2026-07-24-às-17.43.06.png",
       "year": "Agosto 2022",
       "category": "Branding / Posicionamento"
+    },
+    {
+      "challenge": "Desenvolver um conceito criativo e um roteiro de vídeo que sensibilizassem tanto o público local quanto o nacional, justificando a relevância cultural do evento e estimulando a apropriação comunitária, equilibrando o tom festivo com a responsabilidade da comunicação institucional pública.",
+      "slug": "sao-joao-de-fortaleza-2015",
+      "client": "Secretaria Municipal de Cultura / Prefeitura de Fortaleza",
+      "context": "<p>O São João de Fortaleza consolidou-se como um dos maiores eventos juninos urbanos do país, celebrando a identidade nordestina. Em 2015, a gestão pública precisava mobilizar a população em torno de uma mensagem que unisse a tradição cultural ao orgulho de viver na cidade, fomentando o turismo e a economia local sob forte escrutínio de aplicação de recursos públicos.</p>",
+      "gallery": [
+        {
+          "type": "vimeo",
+          "vimeoId": "1210623163",
+          "caption": "Filme oficial da campanha de 60 segundos veiculado em TV aberta e meios digitais."
+        }
+      ],
+      "strategy": "Apostar na força do pertencimento territorial e na ancestralidade junina. A narrativa foi construída ao redor da ideia de que o São João não é apenas um evento turístico, mas o resgate de uma raiz que vive no cotidiano do fortalezense. O conceito de comunicação amarrou a festividade à história das quadrilhas comunitárias da periferia, dando destaque aos verdadeiros protagonistas da festa.",
+      "role": "<p>Redação do manifesto de posicionamento, redação das peças impressas e digitais, incluindo roteiro e concepção do Filme Promocional de 60 segundos, além de curadoria de mensagens para coletiva de imprensa e mídia digital.</p>",
+      "results": "O vídeo oficial da campanha alcançou ampla veiculação na TV aberta e mídias sociais, gerando engajamento recorde para a comunicação da Prefeitura. A cobertura orgânica de imprensa foi amplificada devido à clareza das mensagens institucionais distribuídas.",
+      "title": "São João de Fortaleza 2015",
+      "solution": "Criamos um roteiro dinâmico e emocional que conectou o som da sanfona e o movimento da quadrilha aos cartões-postais e à diversidade de Fortaleza. O tom institucional foi assegurado através de uma locução sóbria, porém calorosa, que enalteceu o investimento na economia da cultura.",
+      "image": "assets/images/captura-de-tela-2026-07-23-às-15.18.50.png",
+      "year": "2015",
+      "category": "Eventos"
     }
   ]
 }

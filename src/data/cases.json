@@ -22,25 +22,29 @@
       "category": "Eventos"
     },
     {
-      "challenge": "Sintetizar centenas de páginas de dados de engenharia, métricas de biodiversidade e índices de governança corporativa em um texto fluido, transparente e de forte apelo institucional, atendendo às normas do GRI (Global Reporting Initiative).",
-      "slug": "esg-neoenergias-2023",
-      "client": "NeoEnergias Brasil",
-      "context": "Em um cenário global altamente focado em transição energética e finanças verdes, a NeoEnergias precisava apresentar seu Relatório de Sustentabilidade para investidores nacionais e estrangeiros. O principal obstáculo era o excesso de termos técnicos herméticos e a falta de uma linha narrativa que ligasse as metas de descarbonização às realidades das comunidades locais impactadas.",
+      "challenge": "<p>Construir uma imagem positiva em volta daquela que o público percebia como negativa, esse seria o maior desafio. Claro que o objetivo maior era conseguir reeleger o prefeito, mas, mesmo se não conseguíssemos, era fundamental construir um legado, uma reputação positiva para quem já estava marcado pela falta de percepção de presença diante do povo.</p>",
+      "slug": "campanha-Sarto-prefeito-2024",
+      "client": "José Sarto",
+      "context": "<p>José Sarto era um candidato diferente. Pela primeira vez na história de Fortaleza, um prefeito não performava bem nas pesquisas, mesmo ainda durante seu mandato. O desafio era grande, já que a oposição (sabidamente Cap. Wagner e Evandro Leitão) estavam se destacando mais que o próprio prefeito. Precisávamos construir uma narrativa predominante de presença e aceitação do público geral.</p>",
       "gallery": [
         {
           "type": "image",
           "src": "assets/images/esg_gallery_1.jpg",
           "caption": "Páginas internas destacando o design editorial focado em tipografia refinada e dados infográficos integrados."
+        },
+        {
+          "type": "youtube",
+          "youtubeId": "https://youtu.be/uH7cOZEB0Ag?si=2M_3FA_k5uw9UWXf"
         }
       ],
-      "strategy": "Estruturar o relatório com base no conceito 'Energia que Gera Transformação'. Humanizamos os dados transformando números de megawatts gerados em histórias de comunidades do semiárido que receberam eletrificação limpa e inclusão social. O texto manteve rigor técnico nas seções financeiras e fluidez narrativa nas seções ambientais e sociais.",
-      "role": "Consultoria de tom de voz para o comitê ESG, redação executiva das seções 'Carta da Presidência', 'Impacto Comunitário' e edição final de conformidade estilística.",
-      "results": "O relatório foi classificado entre as melhores publicações de sustentabilidade do setor elétrico de 2023, recebendo feedbacks positivos de comitês de investimento internacionais pela transparência e excelente legibilidade de suas teses de governança.",
-      "title": "Narrativa ESG e Relacionamento com Acionistas: NeoEnergias",
-      "solution": "Dividimos o relatório em três grandes pilares com textos introdutórios que funcionaram como micro-manifestos. Empregamos um design de parágrafos curtos, sentenças diretas e títulos equilibrados no estilo editorial da McKinsey.",
+      "strategy": "<p>Prejudicado pelo cenário do início do seu mandato, que se deu em plena pandemia de Covid-19, José Sarto teria que deixar de ser o chefe do executivo municipal para ser o amigo do povo, presente, próximo e acessível, com uma grande chance de ser reconhecido como igual. Para isso, mudamos a postura dele diante do povo, adotamos a juliet, o visual mais simples e despojado, a presença massiva em eventos públicos e a transição de prefeito distante do povo para candidato da comunidade.</p>",
+      "role": "<p>A voz do candidato foi definida, sua biografia contava uma história plausível e perfeitamente alinhada com o propósito. O que fizemos foi alinhar realidade com narrativa, aproveitando ainda as gírias de Fortaleza. No rádio, especificamente onde mais atuei, a estratégia foi composta por programas bem estruturados, além de jingles e vinhetas bem humoradas, o que ajudou a contagiar  o público e embalar a campanha.</p>",
+      "results": "<p>Em apenas dois meses desde o início da pré-campanha, experimentamos um salto de 12% para 27% em intenções de voto, referendado pelos mais respeitados institutos de pesquisa do país. Finalizamos a campanha com uma campanha que virou referência de métodos e resultados, incluindo o humor tipicamente cearense em todas as estratégias.</p>",
+      "title": "Campanha Sarto Prefeito 2024",
+      "solution": "<p>Com base em muita pesquisa e observação, nasceu o \"É sal, é Sarto!\", slogan de campanha que transformou o candidato em febre e fez viralizar a disputa em todas as regiões do Brasil, com vários candidatos adotando sua estética e modo de falar.</p>",
       "image": "assets/images/esg_cover.jpg",
-      "year": "2023",
-      "category": "ESG / Relatórios Anuais"
+      "year": "2024",
+      "category": "Campanhas Públicas"
     },
     {
       "challenge": "Evitar os clichês repetitivos do setor de tecnologia (como 'inovação disruptiva' e 'soluções ágeis') e construir uma narrativa proprietária, sólida e respeitável, sintonizada com tomadores de decisão de nível executivo (C-Level).",

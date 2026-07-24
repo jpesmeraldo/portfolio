@@ -227,7 +227,7 @@ export async function renderHome(container) {
             <img src="/assets/images/foto_contato_verde.png" alt="Contato João Paulo" class="profile-contact-image" />
           </div>
           <p style="color: var(--color-text-secondary);">
-            Entre em contato para discutir posicionamento, discursos corporativos ou campanhas de comunicação de alto padrão.
+            Entre em contato para discutirmos sua próxima campanha de alto padrão.
           </p>
         </div>
         <div class="contact-grid-right">
@@ -239,7 +239,7 @@ export async function renderHome(container) {
               <span>WhatsApp: Conversar agora</span>
             </a>
             <a href="${profile.contact.linkedin}" target="_blank" class="contact-link">
-              <span>LinkedIn Professional Profile</span>
+              <span>Perfil no LinkedIn</span>
             </a>
           </div>
         </div>

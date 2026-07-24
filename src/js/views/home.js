@@ -151,6 +151,7 @@ export async function renderHome(container) {
     </section>
 
     <!-- Methodology Section -->
+    ${(profile.show_methodology !== false) ? `
     <section id="metodologia">
       <div class="container">
         <span class="section-label">Metodologia</span>
@@ -162,8 +163,10 @@ export async function renderHome(container) {
         </div>
       </div>
     </section>
+    ` : ''}
 
     <!-- Texts Highlight Section -->
+    ${(profile.show_library !== false) ? `
     <section id="biblioteca" class="bg-sec">
       <div class="container">
         <div class="cases-section-header">
@@ -180,6 +183,7 @@ export async function renderHome(container) {
         </div>
       </div>
     </section>
+    ` : ''}
 
     <!-- Clients list Section -->
     ${profile.show_clients ? `

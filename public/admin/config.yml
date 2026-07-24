@@ -142,6 +142,16 @@ collections:
             widget: "boolean"
             default: false
             required: false
+          - label: "Exibir Seção de Metodologia no Site"
+            name: "show_methodology"
+            widget: "boolean"
+            default: true
+            required: false
+          - label: "Exibir Seção de Biblioteca no Site"
+            name: "show_library"
+            widget: "boolean"
+            default: true
+            required: false
 
   - name: "cases_collection"
     label: "Cases de Sucesso (Portfólio)"

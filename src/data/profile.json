@@ -100,5 +100,9 @@
       "title": "Comunicação Corporativa & ESG",
       "description": "Gestão de crise, reposicionamento e estratégias de relações públicas."
     }
-  ]
+  ],
+  "show_clients": false,
+  "show_testimonials": false,
+  "show_methodology": true,
+  "show_library": true
 }

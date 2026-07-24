@@ -44,16 +44,16 @@
   "show_clients": false,
   "clients": [
     {
-      "name": "Setor Público Federal & Estadual",
-      "sector": "Comunicação de utilidade pública e mobilização"
+      "name": "Governo do Estado do Ceará",
+      "sector": "Comunicação criativa, institucional e para eventos."
     },
     {
-      "name": "Grandes Agências de Branding",
-      "sector": "Construção de narrativas conceituais para rebranding"
+      "name": "Assembleia Legislativa do Estado do Ceará - ALECE",
+      "sector": "Construção de narrativas institucionais, de utilidade pública e mobilização."
     },
     {
-      "name": "Empresas de Infraestrutura e Energia",
-      "sector": "Relatórios de sustentabilidade e ESG"
+      "name": "Prefeitura de Fortaleza",
+      "sector": "Planejamento e execução de campanhas institucionais, de utilidade pública e mobilização."
     },
     {
       "name": "Consultorias de Reputação e PR",
